@@ -3,17 +3,15 @@
     <video autoplay muted loop id="background-video">
       <source src="./assets/videos/background-video.mp4" type="video/mp4">
     </video>
-    <WelcomeLogo/>
+    <router-view></router-view> 
   </div>
 </template>
 
 <script>
-import WelcomeLogo from './components/WelcomeLogo.vue'
 
 export default {
   name: 'App',
   components: {
-    WelcomeLogo
   }
 }
 </script>
