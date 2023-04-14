@@ -3,13 +3,18 @@
     <video autoplay muted loop id="background-video">
       <source src="./assets/videos/background-video.mp4" type="video/mp4">
     </video>
-    <img src="./assets/images/logo-pink.png" id="welcome-logo">
+    <WelcomeLogo/>
   </div>
 </template>
 
 <script>
+import WelcomeLogo from './components/WelcomeLogo.vue'
+
 export default {
   name: 'App',
+  components: {
+    WelcomeLogo
+  }
 }
 </script>
 
@@ -31,23 +36,6 @@ export default {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-}
-
-#welcome-logo {
-  margin: auto;
-  cursor: url(./assets/images/mushroom-emoji-text-cursor.png) 10 6, move;
-}
-
-@media (orientation: landscape) {
-  #welcome-logo {
-    height: 85vh;
-  }
-}
-
-@media (orientation: portrait) {
-  #welcome-logo {
-    width: 70vw;
-  }
 }
 
 </style>
