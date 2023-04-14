@@ -6,7 +6,7 @@
 import WelcomeLogo from '../components/WelcomeLogo.vue'
 
 export default {
-    name: 'HomePage',
+    name: 'WelcomePage',
         components: {
             WelcomeLogo
         }
