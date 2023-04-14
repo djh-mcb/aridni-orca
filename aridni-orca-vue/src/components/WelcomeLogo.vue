@@ -5,9 +5,6 @@
 <script>
 export default {
   name: 'WelcomeLogo',
-  props: {
-    msg: String
-  }
 }
 </script>
 

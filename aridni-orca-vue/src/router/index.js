@@ -5,6 +5,11 @@ const routes = [
         path: "/",
         component: () => import("@/views/WelcomePage"),
     },
+    {
+        path: "/home",
+        name: "home",
+        component: () => import("@/views/HomePage"),
+    }
 ]
 
 const router = createRouter({
