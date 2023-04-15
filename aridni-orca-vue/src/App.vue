@@ -17,13 +17,17 @@ export default {
 </script>
 
 <style>
+:root {
+  --mouseover-cursor: url(./assets/images/mushroom-emoji-text-cursor.png) 10 6, move;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 #background-video {
@@ -35,5 +39,4 @@ export default {
   object-fit: cover;
   z-index: -1;
 }
-
 </style>

@@ -8,11 +8,10 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #welcome-logo {
   margin: auto;
-  cursor: url(../assets/images/mushroom-emoji-text-cursor.png) 10 6, move;
+  cursor: var(--mouseover-cursor);
 }
 
 @media (orientation: landscape) {
