@@ -2,7 +2,10 @@
     <div class="panelBox row">
         <div class="leftColumn column">
             <NavigationPane class="watch-pane" source="watch-image.gif" accentColor="pink" text="watch"/>
-            <NavigationPane class="shows-pane" source="shows-image.gif" accentColor="#bcb9af" text="shows"/>
+            <div class="bottomLeftRow row">
+                <NavigationPane class="shows-pane" source="shows-image.gif" accentColor="#bcb9af" text="shows"/>
+                <img class="logo" src="../assets/images/logo-orange.png" @click="this.$router.push({ name: 'welcome' });">
+            </div>
         </div>
         <div class="rightColumn column">
             <div class="topRow row">
@@ -16,7 +19,7 @@
                     <NavigationPane class="magic-pane" :source=magicImage :accentColor=magicColor @click="magicImage = 'magic-card.png'; magicColor = 'transparent'"/>
                 </div>
             </div>
-            <div class="bottomRow row">
+            <div class="bottomRightRow row">
                 <NavigationPane class="buy-pane" source="buy-image.jpeg" accentColor="white" text="buy"/>
                 <NavigationPane class="featherpluck-pane" source="featherpluck-art.png" accentColor="#ceeefd"/>
             </div>
@@ -46,38 +49,85 @@ export default {
 .panelBox {
     width: 100%;
     height: 100%;
+    /* background-color: white; */
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 40px;
+    gap: 1em;
 }
-
 
 .column {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 40px;
+    gap: 1em;
     align-items: flex-start;
 }
 
+.leftColumn {
+    /* background-color: green; */
+    flex-grow: 1;
+}
+.rightColumn {
+    /* background-color: red; */
+    flex-grow: 2;
+}
+
+.outerColumn {
+    /* background-color: black; */
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.innerColumn {
+    /* background-color: brown; */
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.topRow {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.bottomLeftRow {
+    justify-content: space-around;
+    width: 100%;
+    flex-grow: 1;
+}
+.bottomRightRow {
+    /* background-color: orange; */
+    justify-content: space-around;
+    width: 100%;
+}
+
+.logo {
+    height: 17em;
+    align-self: center;
+    cursor: var(--mouseover-cursor);
+}
 .watch-pane {
     height: 25em;
 }
 
 .shows-pane {
     height: 20em;
+    align-self: flex-end;
+    margin-bottom: 1em;
 }
 
 .featherpluck-pane {
     height: 10em;
+    align-self: center;
+    margin-right: 4em;
 }
 
 .renaissance-pane {
     height: 12em;
+    align-self: center;
 }
 
 .buy-pane {
@@ -90,6 +140,7 @@ export default {
 
 .magic-pane {
     height: 17em;
+    align-self: center;
 }
 
 .fairy-ring-pane {
@@ -98,6 +149,7 @@ export default {
 
 .harp-pane {
     height: 13em;
+    align-self: flex-end;
 }
 </style>
   

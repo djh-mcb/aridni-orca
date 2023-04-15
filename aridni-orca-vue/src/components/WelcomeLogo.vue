@@ -10,8 +10,11 @@ export default {
 
 <style scoped>
 #welcome-logo {
-  margin: auto;
   cursor: var(--mouseover-cursor);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (orientation: landscape) {
