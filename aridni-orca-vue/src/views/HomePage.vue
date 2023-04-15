@@ -20,6 +20,7 @@
                 </div>
             </div>
             <div class="bottomRightRow row">
+                <NavigationPane class="contact-pane" source="bubble.gif" textColor="#ff6100" text="contact"/>
                 <NavigationPane class="buy-pane" source="buy-image.jpeg" accentColor="white" text="buy"/>
                 <ImagePane class="featherpluck-pane" source="featherpluck-art.png" accentColor="#ceeefd"/>
             </div>
@@ -133,6 +134,10 @@ export default {
     align-self: center;
 }
 
+.contact-pane {
+    height: 13em;
+    align-self: flex-end;
+}
 .buy-pane {
     height: 13em;
     align-self: flex-end;
