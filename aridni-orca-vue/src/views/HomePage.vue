@@ -3,9 +3,11 @@
         <NavigationPane class="watch-pane" source="watch-image.gif" accentColor="pink" text="watch"/>
         <NavigationPane class="shows-pane" source="shows-image.gif" accentColor="#bcb9af" text="shows"/>
         <NavigationPane class="listen-pane" source="listen-image.gif" accentColor="blue" text="listen"/>
-        <NavigationPane class="magic-pane" :source=magicImage accentColor="transparent" text="" @click="magicImage = 'magic-card.png'"/>
-        <NavigationPane class="harp-pane" source="harp-playing.gif" accentColor="transparent" text=""/>
-        <NavigationPane class="featherpluck-pane" source="featherpluck-art.png" accentColor="#ceeefd" text=""/>
+        <NavigationPane class="renaissance-pane" source="renaissance.jpg" accentColor="orange"/>
+        <NavigationPane class="magic-pane" :source=magicImage :accentColor=magicColor @click="magicImage = 'magic-card.png'; magicColor = 'transparent'"/>
+        <NavigationPane class="harp-pane" source="harp-playing.gif" accentColor="transparent"/>
+        <NavigationPane class="featherpluck-pane" source="featherpluck-art.png" accentColor="#ceeefd"/>
+        <NavigationPane class="fairy-ring-pane" :source=fairyImage accentColor="transparent" @click="fairyImage = 'fairy-facts.jpg'"/>
         <NavigationPane class="buy-pane" source="buy-image.jpeg" accentColor="white" text="buy"/>
     </div>
 </template>
@@ -17,7 +19,9 @@ export default {
     name: 'HomePage',
     data() {
         return {    
-            magicImage: "mushrooms.jpg"
+            magicImage: "mushrooms.jpg",
+            magicColor: "red",
+            fairyImage: "fairy-ring.jpg",
         }
     },
     components: {
@@ -47,8 +51,12 @@ export default {
     height: 10em;
 }
 
+.renaissance-pane {
+    height: 12em;
+}
+
 .buy-pane {
-    height: 15em;
+    height: 13em;
 }
 
 .listen-pane {
@@ -57,6 +65,10 @@ export default {
 
 .magic-pane {
     height: 17em;
+}
+
+.fairy-ring-pane {
+    height: 14em;
 }
 
 .harp-pane {
