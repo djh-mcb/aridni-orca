@@ -1,6 +1,6 @@
 <template>
   <div class="container clickable" :style="cssProps">
-    <ImagePane class="image" v-bind:source="source"/>
+    <ImagePane class="image" v-bind:source="source" v-bind:accentColor="accentColor"/>
     <div id="text">{{ text }}</div>
   </div>
 </template>
@@ -19,9 +19,9 @@ export default {
   computed: {
     cssProps() {
       return {
-        '--accentColor': (this.accentColor),
+        '--textColor': (this.textColor || this.accentColor),
       }
-    }
+    },
   },
   components: {
     ImagePane,
@@ -40,7 +40,7 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--accentColor);
+  color: var(--textColor);
   font-size: 200%;
 }
 
