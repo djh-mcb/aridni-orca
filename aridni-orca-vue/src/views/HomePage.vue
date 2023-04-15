@@ -4,24 +4,24 @@
             <NavigationPane class="watch-pane" source="watch-image.gif" accentColor="pink" text="watch"/>
             <div class="bottomLeftRow row">
                 <NavigationPane class="shows-pane" source="shows-image.gif" accentColor="#bcb9af" text="shows"/>
-                <img class="logo" src="../assets/images/logo-orange.png" @click="this.$router.push({ name: 'welcome' });">
+                <img class="logo clickable" src="../assets/images/logo-orange.png" @click="this.$router.push({ name: 'welcome' });">
             </div>
         </div>
         <div class="rightColumn column">
             <div class="topRow row">
                 <div class="innerColumn column">
-                    <NavigationPane class="renaissance-pane" source="renaissance.jpg" accentColor="orange"/>
-                    <NavigationPane class="fairy-ring-pane" :source=fairyImage accentColor="transparent" @click="fairyImage = 'fairy-facts.jpg'"/>
+                    <ImagePane class="renaissance-pane" source="renaissance.jpg" accentColor="orange"/>
+                    <ImagePane class="fairy-ring-pane clickable" :source=fairyImage accentColor="transparent" @click="fairyImage = 'fairy-facts.jpg'"/>
                 </div>
                 <NavigationPane class="listen-pane" source="listen-image.gif" accentColor="blue" text="listen"/>
                 <div class="outerColumn column">
-                    <NavigationPane class="harp-pane" source="harp-playing.gif" accentColor="transparent"/>
-                    <NavigationPane class="magic-pane" :source=magicImage :accentColor=magicColor @click="magicImage = 'magic-card.png'; magicColor = 'transparent'"/>
+                    <ImagePane class="harp-pane" source="harp-playing.gif" accentColor="transparent"/>
+                    <ImagePane class="magic-pane clickable" :source=magicImage :accentColor=magicColor @click="magicImage = 'magic-card.png'; magicColor = 'transparent'"/>
                 </div>
             </div>
             <div class="bottomRightRow row">
                 <NavigationPane class="buy-pane" source="buy-image.jpeg" accentColor="white" text="buy"/>
-                <NavigationPane class="featherpluck-pane" source="featherpluck-art.png" accentColor="#ceeefd"/>
+                <ImagePane class="featherpluck-pane" source="featherpluck-art.png" accentColor="#ceeefd"/>
             </div>
         </div>
     </div>
@@ -29,6 +29,7 @@
 
 <script>
 import NavigationPane from '../components/NavigationPane.vue'
+import ImagePane from '../components/ImagePane.vue'
 
 export default {
     name: 'HomePage',
@@ -40,7 +41,8 @@ export default {
         }
     },
     components: {
-        NavigationPane
+        NavigationPane,
+        ImagePane
     },
 }
 </script>
@@ -49,7 +51,6 @@ export default {
 .panelBox {
     width: 100%;
     height: 100%;
-    /* background-color: white; */
 }
 
 .row {
@@ -91,10 +92,12 @@ export default {
 .topRow {
     justify-content: space-around;
     width: 100%;
+    flex-grow: 1;
 }
 
 .bottomLeftRow {
     justify-content: space-around;
+    /* background-color: aliceblue; */
     width: 100%;
     flex-grow: 1;
 }
@@ -102,12 +105,12 @@ export default {
     /* background-color: orange; */
     justify-content: space-around;
     width: 100%;
+    flex-grow: 1;
 }
 
 .logo {
     height: 17em;
     align-self: center;
-    cursor: var(--mouseover-cursor);
 }
 .watch-pane {
     height: 25em;
@@ -132,6 +135,7 @@ export default {
 
 .buy-pane {
     height: 13em;
+    align-self: flex-end;
 }
 
 .listen-pane {

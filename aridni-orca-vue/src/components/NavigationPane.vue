@@ -1,11 +1,13 @@
 <template>
-  <div class="container" :style="cssProps">
-    <img :src="require(`@/assets/images/${source}`)">
+  <div class="container clickable" :style="cssProps">
+    <ImagePane class="image" v-bind:source="source"/>
     <div id="text">{{ text }}</div>
   </div>
 </template>
 
 <script>
+import ImagePane from './ImagePane.vue';
+
 export default {
   name: 'NavigationPane',
   props: {
@@ -20,16 +22,17 @@ export default {
         '--accentColor': (this.accentColor),
       }
     }
-  }
+  },
+  components: {
+    ImagePane,
+  },
 }
 </script>
 
 <style scoped>
 .container {
   position: relative;
-  border: 5px solid var(--accentColor);
   display: inline-block;
-  cursor: var(--mouseover-cursor);
 }
 
 #text {
@@ -41,7 +44,7 @@ export default {
   font-size: 200%;
 }
 
-img {
+.image {
   height: 100%;
   display: block;
 }
