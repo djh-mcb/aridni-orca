@@ -1,5 +1,7 @@
 <template>
-  <img src="../assets/images/logo-pink.png" id="welcome-logo" class="clickable">
+  <div>
+    <img src="../assets/images/logo-pink.png" id="welcome-logo" class="clickable">
+  </div>
 </template>
 
 <script>

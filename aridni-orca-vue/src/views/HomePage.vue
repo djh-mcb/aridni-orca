@@ -11,7 +11,7 @@
             <div class="topRow row">
                 <div class="innerColumn column">
                     <ImagePane class="renaissance-pane" source="renaissance.jpg" accentColor="orange"/>
-                    <ImagePane class="fairy-ring-pane clickable" :source=fairyImage accentColor="transparent" @click="fairyImage = 'fairy-facts.jpg'"/>
+                    <ImagePane class="fairy-ring-pane clickable" :source=fairyImage accentColor="transparent" @click="fairyImage = 'fairy-facts.png'"/>
                 </div>
                 <NavigationPane class="listen-pane" source="listen-image.gif" accentColor="blue" text="listen"/>
                 <div class="outerColumn column">
@@ -140,7 +140,7 @@ export default {
 }
 .buy-pane {
     height: 13em;
-    align-self: flex-end;
+    align-self: center;
 }
 
 .listen-pane {

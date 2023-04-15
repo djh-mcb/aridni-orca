@@ -3,7 +3,7 @@
     <video autoplay muted loop id="background-video">
       <source src="./assets/videos/background-video.mp4" type="video/mp4">
     </video>
-    <router-view></router-view> 
+    <router-view class="mainView"></router-view> 
   </div>
 </template>
 
@@ -38,5 +38,13 @@ export default {
 
 .clickable {
   cursor: url(./assets/images/mushroom-emoji-text-cursor.png) 10 6, move;
+}
+
+.mainView {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
