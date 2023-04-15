@@ -1,14 +1,26 @@
 <template>
-    <div class="panelBox">
-        <NavigationPane class="watch-pane" source="watch-image.gif" accentColor="pink" text="watch"/>
-        <NavigationPane class="shows-pane" source="shows-image.gif" accentColor="#bcb9af" text="shows"/>
-        <NavigationPane class="listen-pane" source="listen-image.gif" accentColor="blue" text="listen"/>
-        <NavigationPane class="renaissance-pane" source="renaissance.jpg" accentColor="orange"/>
-        <NavigationPane class="magic-pane" :source=magicImage :accentColor=magicColor @click="magicImage = 'magic-card.png'; magicColor = 'transparent'"/>
-        <NavigationPane class="harp-pane" source="harp-playing.gif" accentColor="transparent"/>
-        <NavigationPane class="featherpluck-pane" source="featherpluck-art.png" accentColor="#ceeefd"/>
-        <NavigationPane class="fairy-ring-pane" :source=fairyImage accentColor="transparent" @click="fairyImage = 'fairy-facts.jpg'"/>
-        <NavigationPane class="buy-pane" source="buy-image.jpeg" accentColor="white" text="buy"/>
+    <div class="panelBox row">
+        <div class="leftColumn column">
+            <NavigationPane class="watch-pane" source="watch-image.gif" accentColor="pink" text="watch"/>
+            <NavigationPane class="shows-pane" source="shows-image.gif" accentColor="#bcb9af" text="shows"/>
+        </div>
+        <div class="rightColumn column">
+            <div class="topRow row">
+                <div class="innerColumn column">
+                    <NavigationPane class="renaissance-pane" source="renaissance.jpg" accentColor="orange"/>
+                    <NavigationPane class="fairy-ring-pane" :source=fairyImage accentColor="transparent" @click="fairyImage = 'fairy-facts.jpg'"/>
+                </div>
+                <NavigationPane class="listen-pane" source="listen-image.gif" accentColor="blue" text="listen"/>
+                <div class="outerColumn column">
+                    <NavigationPane class="harp-pane" source="harp-playing.gif" accentColor="transparent"/>
+                    <NavigationPane class="magic-pane" :source=magicImage :accentColor=magicColor @click="magicImage = 'magic-card.png'; magicColor = 'transparent'"/>
+                </div>
+            </div>
+            <div class="bottomRow row">
+                <NavigationPane class="buy-pane" source="buy-image.jpeg" accentColor="white" text="buy"/>
+                <NavigationPane class="featherpluck-pane" source="featherpluck-art.png" accentColor="#ceeefd"/>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -30,13 +42,26 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .panelBox {
     width: 100%;
     height: 100%;
+}
+
+.row {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 40px;
+}
+
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
 }
 
 .watch-pane {
