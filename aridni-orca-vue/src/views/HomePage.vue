@@ -15,7 +15,10 @@
                 </div>
                 <NavigationPane class="listen-pane" source="listen-image.gif" accentColor="blue" text="listen"/>
                 <div class="outerColumn column">
-                    <ImagePane class="harp-pane" source="harp-playing.gif" accentColor="transparent"/>
+                    <div class="about-pane-box clickable">
+                        <NavigationPane class="about-pane" source="harp-playing.gif"/>
+                        <div class="about-text"></div>
+                    </div>
                     <ImagePane class="magic-pane clickable" :source=magicImage :accentColor=magicColor @click="magicImage = 'magic-card.png'; magicColor = 'transparent'"/>
                 </div>
             </div>
@@ -70,10 +73,14 @@ export default {
 }
 
 .leftColumn {
+    margin-top: 0.5em;
+    margin-left: 0.5em;
     /* background-color: green; */
     flex-grow: 1;
 }
 .rightColumn {
+    margin-top: 1em;
+    margin-right: 1em;
     /* background-color: red; */
     flex-grow: 2;
 }
@@ -81,7 +88,7 @@ export default {
 .outerColumn {
     /* background-color: black; */
     flex-grow: 1;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .innerColumn {
@@ -101,12 +108,14 @@ export default {
     /* background-color: aliceblue; */
     width: 100%;
     flex-grow: 1;
+    margin-bottom: 1em;
 }
 .bottomRightRow {
     /* background-color: orange; */
     justify-content: space-around;
     width: 100%;
     flex-grow: 1;
+    margin-bottom: 1em;
 }
 
 .logo {
@@ -156,9 +165,25 @@ export default {
     height: 14em;
 }
 
-.harp-pane {
-    height: 13em;
+.about-pane {
+    height: 14em;
+    align-self: center;
+    margin-top: 4em;
+}
+.about-pane-box {
     align-self: flex-end;
+    height: 45%;
+}
+
+.about-text {
+    align-self: center;
+    background-color: red;
+    width: 100%;
+    height: 5em;
+    margin-top: -18em;
+    -webkit-mask: url(../assets/images/about.svg) no-repeat center;
+    mask: url(../assets/images/about.svg) no-repeat center;
+    mask-size: 90%, 90%;
 }
 </style>
   
