@@ -27,7 +27,6 @@ export default {
     top: calc(100% - 3.5em);
     left: 1em;
     height: 2.5em;
-    width: 12em;
 }
 </style>
   
