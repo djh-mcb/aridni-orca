@@ -13,7 +13,7 @@
                     <ImagePane class="renaissance-pane" source="renaissance.jpg" accentColor="orange"/>
                     <CyclingImagePane class="fairy-ring-pane" :panes=fairyPanes />
                 </div>
-                <NavigationPane class="listen-pane" source="listen-image.gif" accentColor="blue" text="listen"/>
+                <NavigationPane class="listen-pane" source="listen-image.gif" accentColor="blue" text="listen" destination="listen"/>
                 <div class="outerColumn column">
                     <div class="about-pane-box clickable">
                         <NavigationPane class="about-pane" source="harp-playing.gif"/>
@@ -24,7 +24,7 @@
             </div>
             <div class="bottomRightRow row">
                 <NavigationPane class="contact-pane" source="bubble.gif" textColor="#ff6100" text="contact"/>
-                <NavigationPane class="buy-pane" source="buy-image.jpeg" accentColor="white" text="buy"/>
+                <a href="https://aridniorca.bandcamp.com/"><NavigationPane class="buy-pane" source="buy-image.jpeg" accentColor="white" text="buy"/></a>
                 <ImagePane class="featherpluck-pane" source="featherpluck-art.png" accentColor="#ceeefd"/>
             </div>
         </div>

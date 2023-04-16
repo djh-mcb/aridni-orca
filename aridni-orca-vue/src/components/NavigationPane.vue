@@ -1,6 +1,6 @@
 <template>
   <div class="container clickable" :style="cssProps">
-    <ImagePane class="image" v-bind:source="source" v-bind:accentColor="accentColor"/>
+    <ImagePane class="image" v-bind:source="source" v-bind:accentColor="accentColor" @click="this.$router.push({ name: destination })"/>
     <div id="text">{{ text }}</div>
   </div>
 </template>
@@ -15,6 +15,7 @@ export default {
     accentColor: String,
     text: String,
     textColor: String,
+    destination: String,
   },
   computed: {
     cssProps() {
