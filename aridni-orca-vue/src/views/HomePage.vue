@@ -11,7 +11,7 @@
             <div class="topRow row">
                 <div class="innerColumn column">
                     <ImagePane class="renaissance-pane" source="renaissance.jpg" accentColor="orange"/>
-                    <ImagePane class="fairy-ring-pane clickable" :source=fairyImage accentColor="transparent" @click="fairyImage = 'fairy-facts.png'"/>
+                    <CyclingImagePane class="fairy-ring-pane" :panes=fairyPanes />
                 </div>
                 <NavigationPane class="listen-pane" source="listen-image.gif" accentColor="blue" text="listen"/>
                 <div class="outerColumn column">
@@ -19,7 +19,7 @@
                         <NavigationPane class="about-pane" source="harp-playing.gif"/>
                         <div class="about-text"></div>
                     </div>
-                    <ImagePane class="magic-pane clickable" :source=magicImage :accentColor=magicColor @click="magicImage = 'magic-card.png'; magicColor = 'transparent'"/>
+                    <CyclingImagePane class="magic-pane" :panes=magicPanes />
                 </div>
             </div>
             <div class="bottomRightRow row">
@@ -34,19 +34,20 @@
 <script>
 import NavigationPane from '../components/NavigationPane.vue'
 import ImagePane from '../components/ImagePane.vue'
+import CyclingImagePane from '../components/CyclingImagePane.vue'
 
 export default {
     name: 'HomePage',
     data() {
         return {    
-            magicImage: "mushrooms.jpg",
-            magicColor: "red",
-            fairyImage: "fairy-ring.jpg",
+            magicPanes: [{source: 'mushrooms.jpg', accentColor: 'red'}, {source: 'magic-card.png', accentColor: 'transparent'}],
+            fairyPanes: [{source: "fairy-ring.jpg", accentColor:  'transparent'}, {source: 'fairy-facts.png', accentColor: 'transparent'}],
         }
     },
     components: {
         NavigationPane,
-        ImagePane
+        ImagePane,
+        CyclingImagePane
     },
 }
 </script>
@@ -145,7 +146,7 @@ export default {
 
 .contact-pane {
     height: 13em;
-    align-self: flex-end;
+    align-self: flex-end;;
 }
 .buy-pane {
     height: 13em;
@@ -168,7 +169,7 @@ export default {
 .about-pane {
     height: 14em;
     align-self: center;
-    margin-top: 4em;
+    padding-top: 4em; /* Space for the 'about' text svg*/
 }
 .about-pane-box {
     align-self: flex-end;
