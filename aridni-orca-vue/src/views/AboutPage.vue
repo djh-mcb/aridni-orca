@@ -1,8 +1,8 @@
 <template>
     <div class="parchmentBox">
         <div>
-            <img class="logo" src="../assets/images/logo-pink.png">
-            <body>.・゜゜・✧･: *✧･:*゜・．<br/><br/>aridni_orca is a London-based artist, multi-instruentalist, producer, and composer. Her music has a distinct hybrid sound that explores electronic elements, processed environmental samples, and classical arrangements.</body>
+            <img class="indiFace" src="../assets/images/indi-face.png">
+            <body>.・゜゜・✧･: *✧･:*゜・．<br/><br/>aridni orca is a London-based artist, multi-instrumentalist, producer, and composer. Her music is characterised by a distinct hybrid sound that explores electronic elements, processed environmental samples, and classical arrangements.</body>
         </div>
     </div>
 </template>
@@ -33,9 +33,9 @@ export default {
     left: 0;
 }
 
-.logo {
+.indiFace {
     position: relative;
-    height: 15em;
+    height: 20em;
     margin: auto;
     margin-top: 25%;   
     margin-bottom: 2em;
@@ -49,11 +49,12 @@ export default {
 }
 
 body {
-    width: calc(100% - 10em);
+    width: calc(100% - 15em);
     height: 100%;
     margin: auto;
     top: 10em;
     font-family: 'Luminari-Regular';
+    color: midnightblue;
 }
 
 </style>
