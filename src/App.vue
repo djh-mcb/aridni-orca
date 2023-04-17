@@ -1,18 +1,15 @@
 <template>
   <div id="app">
-    <video autoplay muted loop id="background-video">
-      <source src="./assets/videos/background-video.mp4" type="video/mp4">
-    </video>
-    <router-view class="mainView"></router-view> 
+    <video autoplay muted loop id="background-video" src="./assets/videos/background-video.mp4" type="video/mp4"/>
+    <router-view class="mainView"></router-view>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'App',
   components: {
-  }
+  },
 }
 </script>
 
