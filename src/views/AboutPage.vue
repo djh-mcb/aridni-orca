@@ -3,6 +3,7 @@
         <div>
             <img class="indiFace" src="../assets/images/indi-face.png">
             <body>.・゜゜・✧･: *✧･:*゜・．<br/><br/>aridni orca is a London-based artist, multi-instrumentalist, producer, and composer. Her music is characterised by a distinct hybrid sound that explores electronic elements, processed environmental samples, and classical arrangements.</body>
+            <img class="littleLogo clickable" src="../assets/images/logo-orange.png" @click="this.$router.push({name : 'home'})">
         </div>
     </div>
 </template>
@@ -37,8 +38,13 @@ export default {
     position: relative;
     height: 20em;
     margin: auto;
-    margin-top: 25%;   
-    margin-bottom: 2em;
+    margin-top: 8em;   
+    margin-bottom: 1em;
+}
+
+.littleLogo {
+    height: 6em;
+    margin-top: 1em;
 }
 
 @font-face {
@@ -55,6 +61,7 @@ body {
     top: 10em;
     font-family: 'Luminari-Regular';
     font-style: normal;
+    font-size: 90%;
     color: midnightblue;
 }
 
