@@ -1,5 +1,7 @@
 <template>
-    <iframe class="embeddedPlayer" src="https://www.youtube.com/embed/bGePQWRfElg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="videoPane">
+        <iframe class="embeddedPlayer" src="https://www.youtube.com/embed/bGePQWRfElg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
 </template>
 
 <script>
@@ -10,13 +12,18 @@ export default {
 </script>
 
 <style scoped>
-.embeddedPlayer {
+
+.videoPane {
     position: relative;
     height: 30em;
     width: 53.33em;
     margin: auto;
     border: 5px solid pink;
-    border-radius: 17px
+    background-color: pink;
+}
+.embeddedPlayer {
+    width: 100%;
+    height: 100%;
 }
 </style>
   
