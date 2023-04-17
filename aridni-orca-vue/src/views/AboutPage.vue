@@ -54,6 +54,7 @@ body {
     margin: auto;
     top: 10em;
     font-family: 'Luminari-Regular';
+    font-style: normal;
     color: midnightblue;
 }
 
