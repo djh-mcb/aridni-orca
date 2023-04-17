@@ -20,6 +20,12 @@ const routes = [
         path: "/watch",
         name: "watch",
         component: () => import("@/views/WatchPage"),
+    },
+    {
+
+        path: "/about",
+        name: "about",
+        component: () => import("@/views/AboutPage"),
     }
 ]
 

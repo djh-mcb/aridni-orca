@@ -15,8 +15,8 @@
                 </div>
                 <NavigationPane class="listen-pane" source="listen-image.gif" accentColor="blue" text="listen" destination="listen"/>
                 <div class="outerColumn column">
-                    <div class="about-pane-box clickable">
-                        <NavigationPane class="about-pane" source="harp-playing.gif"/>
+                    <div class="about-pane-box clickable" @click="this.$router.push({name: 'about'})">
+                        <ImagePane class="about-pane" source="harp-playing.gif"/>
                         <div class="about-text"></div>
                     </div>
                     <CyclingImagePane class="magic-pane" :panes=magicPanes />
