@@ -1,7 +1,7 @@
 <template>
     <div class="panelBox row">
         <div class="leftColumn column">
-            <NavigationPane class="watch-pane" source="watch-image.gif" accentColor="pink" text="watch"/>
+            <NavigationPane class="watch-pane" source="watch-image.gif" accentColor="pink" text="watch" destination="watch"/>
             <div class="bottomLeftRow row">
                 <NavigationPane class="shows-pane" source="shows-image.gif" accentColor="#bcb9af" text="shows"/>
                 <img class="logo clickable" src="../assets/images/logo-orange.png" @click="this.$router.push({ name: 'welcome' });">

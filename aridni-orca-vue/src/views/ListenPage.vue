@@ -11,11 +11,11 @@ export default {
 
 <style>
 .embeddedPlayer {
-    position: absolute;
-    width: 20em;
+    position: relative;
+    width: min(20em, 90%);
     height: 25em;
-    left: calc(50% - 10em);
-    top: calc(50% - 12.5em);
+    margin: auto;
+    margin-top: max( calc(50% - 12.5em), 1em);
     border: 5px solid pink;
     border-radius: 17px
 }
