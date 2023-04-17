@@ -12,11 +12,6 @@ const routes = [
         component: () => import("@/views/HomePage"),
     },
     {
-        path: "/watch",
-        name: "watch",
-        component: () => import("@/views/WatchPage"),
-    },
-    {
 
         path: "/about",
         name: "about",

@@ -1,7 +1,7 @@
 <template>
     <div class="panelBox row">
         <div class="leftColumn column">
-            <NavigationPane class="watch-pane" source="watch-image.gif" accentColor="pink" text="watch" destination="watch"/>
+            <WatchPane class="watch-pane" source="watch-image.gif" accentColor="pink" text="watch" destination="watch"/>
             <div class="bottomLeftRow row">
                 <NavigationPane class="shows-pane" source="shows-image.gif" accentColor="#bcb9af" text="shows"/>
                 <img class="logo clickable" src="../assets/images/logo-orange.png" @click="this.$router.push({ name: 'welcome' });">
@@ -39,6 +39,7 @@ import NavigationPane from '../components/NavigationPane.vue'
 import ImagePane from '../components/ImagePane.vue'
 import CyclingImagePane from '../components/CyclingImagePane.vue'
 import ListenPane from '../components/ListenPane.vue'
+import WatchPane from '../components/WatchPane.vue'
 
 export default {
     name: 'HomePage',
@@ -53,7 +54,8 @@ export default {
         NavigationPane,
         ImagePane,
         CyclingImagePane,
-        ListenPane
+        ListenPane,
+        WatchPane
     },
 }
 </script>
