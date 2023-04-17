@@ -23,7 +23,10 @@
                 </div>
             </div>
             <div class="bottomRightRow row">
-                <NavigationPane class="contact-pane" source="bubble.gif" textColor="#ff6100" text="contact"/>
+                <div class="contact-pane-box" @click="showContactInfo=!showContactInfo">
+                    <NavigationPane class="contact-pane" source="bubble.gif" textColor="#ff6100" text="contact"/>
+                    <div class="contact-info-bubble clickable" v-show="showContactInfo"><div class="contact-info">aridni.orca at &nbsp; &nbsp; gmail dot com</div></div>
+                </div>
                 <a href="https://aridniorca.bandcamp.com/"><NavigationPane class="buy-pane" source="buy-image.jpeg" accentColor="white" text="buy"/></a>
                 <ImagePane class="featherpluck-pane" source="featherpluck-art.png" accentColor="#ceeefd"/>
             </div>
@@ -42,6 +45,7 @@ export default {
         return {    
             magicPanes: [{source: 'mushrooms.jpg', accentColor: 'red'}, {source: 'magic-card.png', accentColor: 'transparent'}],
             fairyPanes: [{source: "fairy-ring.jpg", accentColor:  'transparent'}, {source: 'fairy-facts.png', accentColor: 'transparent'}],
+            showContactInfo: false
         }
     },
     components: {
@@ -144,9 +148,38 @@ export default {
     align-self: center;
 }
 
-.contact-pane {
+.contact-pane-box {
     height: 13em;
-    align-self: flex-end;;
+    align-self: flex-end;
+    position: relative;
+}
+
+.contact-pane {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-info-bubble {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    background-color: blue;
+    border-radius: 100%;
+}
+
+.contact-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff6100;
+    text-align: end;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 90%;
+    user-select: none;
 }
 .buy-pane {
     height: 13em;

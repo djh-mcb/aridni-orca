@@ -43,6 +43,7 @@ export default {
   transform: translate(-50%, -50%);
   color: var(--textColor);
   font-size: 200%;
+  user-select: none;
 }
 
 .image {
