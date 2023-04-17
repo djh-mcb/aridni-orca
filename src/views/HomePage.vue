@@ -13,7 +13,7 @@
                     <ImagePane class="renaissance-pane" source="renaissance.jpg" accentColor="orange"/>
                     <CyclingImagePane class="fairy-ring-pane" :panes=fairyPanes />
                 </div>
-                <NavigationPane class="listen-pane" source="listen-image.gif" accentColor="blue" text="listen" destination="listen"/>
+                <ListenPane class="listen-pane"/>
                 <div class="outerColumn column">
                     <div class="about-pane-box clickable" @click="this.$router.push({name: 'about'})">
                         <ImagePane class="about-pane" source="harp-playing.gif"/>
@@ -38,6 +38,7 @@
 import NavigationPane from '../components/NavigationPane.vue'
 import ImagePane from '../components/ImagePane.vue'
 import CyclingImagePane from '../components/CyclingImagePane.vue'
+import ListenPane from '../components/ListenPane.vue'
 
 export default {
     name: 'HomePage',
@@ -51,7 +52,8 @@ export default {
     components: {
         NavigationPane,
         ImagePane,
-        CyclingImagePane
+        CyclingImagePane,
+        ListenPane
     },
 }
 </script>
