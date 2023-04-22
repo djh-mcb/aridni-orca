@@ -1,19 +1,10 @@
 <template>
-    <div class="panelBox row">
-        <div class="leftColumn column">
-            <WatchPane class="watch-pane" source="watch-image.gif" accentColor="pink" text="watch" destination="watch"/>
-            <div class="bottomLeftRow row">
-                <NavigationPane class="shows-pane" source="shows-image.gif" accentColor="#bcb9af" text="shows"/>
-                <img class="logo clickable" src="../assets/images/logo-orange.png" @click="this.$router.push({ name: 'welcome' });">
-            </div>
-        </div>
-        <div class="rightColumn column">
+    <div class="panelBox">
+        <div class="rightSide column">
             <div class="topRow row">
-                <div class="innerColumn column">
-                    <ImagePane class="renaissance-pane" source="renaissance.jpg" accentColor="orange"/>
-                    <CyclingImagePane class="fairy-ring-pane" :panes=fairyPanes />
+                <div class="innerRightColumn">
+                    <ListenPane class="listen-pane"/>
                 </div>
-                <ListenPane class="listen-pane"/>
                 <div class="outerColumn column">
                     <div class="about-pane-box clickable" @click="this.$router.push({name: 'about'})">
                         <ImagePane class="about-pane" source="harp-playing.gif"/>
@@ -23,12 +14,25 @@
                 </div>
             </div>
             <div class="bottomRightRow row">
+                <a href="https://aridniorca.bandcamp.com/"><NavigationPane class="buy-pane" source="buy-image.jpeg" accentColor="white" text="buy"/></a>
+                <ImagePane class="featherpluck-pane" source="featherpluck-art.png" accentColor="#ceeefd"/>
+            </div>
+        </div>
+        <div class="leftSide row">
+            <div class="leftColumn column">
+                <WatchPane class="watch-pane" source="watch-image.gif" accentColor="pink" text="watch" destination="watch"/>
+                <div class="bottomLeftRow row">
+                    <NavigationPane class="shows-pane" source="shows-image.gif" accentColor="#bcb9af" text="shows"/>
+                    <img class="logo clickable" src="../assets/images/logo-orange.png" @click="this.$router.push({ name: 'welcome' });">
+                </div>
+            </div>
+            <div class="innerLeftColumn column">
+                <ImagePane class="renaissance-pane" source="renaissance.jpg" accentColor="orange"/>
+                <CyclingImagePane class="fairy-ring-pane" :panes=fairyPanes />
                 <div class="contact-pane-box" @click="showContactInfo=!showContactInfo">
                     <NavigationPane class="contact-pane" source="bubble.gif" textColor="#ff6100" text="contact"/>
                     <div class="contact-info-bubble clickable" v-show="showContactInfo"><div class="contact-info">aridni.orca at &nbsp; &nbsp; gmail dot com</div></div>
                 </div>
-                <a href="https://aridniorca.bandcamp.com/"><NavigationPane class="buy-pane" source="buy-image.jpeg" accentColor="white" text="buy"/></a>
-                <ImagePane class="featherpluck-pane" source="featherpluck-art.png" accentColor="#ceeefd"/>
             </div>
         </div>
     </div>
@@ -65,6 +69,10 @@ export default {
     width: 100%;
     height: 100%;
     font-size: 0.88vw;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 0.77vw;
 }
 
 .row {
@@ -82,17 +90,22 @@ export default {
     align-items: flex-start;
 }
 
+.leftSide {
+    flex-grow: 1;
+}
+
+.rightSide {
+    margin-top: 0.77vw;
+    margin-right: 0.77vw;
+    /* background-color: red; */
+    flex-grow: 1;
+}
+
 .leftColumn {
     margin-top: 0.39vw;
     margin-left: 0.39vw;
     /* background-color: green; */
     flex-grow: 1;
-}
-.rightColumn {
-    margin-top: 0.77vw;
-    margin-right: 0.77vw;
-    /* background-color: red; */
-    flex-grow: 2;
 }
 
 .outerColumn {
@@ -101,9 +114,17 @@ export default {
     justify-content: space-around;
 }
 
-.innerColumn {
+.innerLeftColumn {
     /* background-color: brown; */
     flex-grow: 1;
+    justify-content: space-around;
+}
+
+.innerRightColumn {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -150,7 +171,7 @@ export default {
 
 .renaissance-pane {
     height: 10.8vw;
-    align-self: center;
+    align-self: flex-end;
 }
 
 .contact-pane-box {
