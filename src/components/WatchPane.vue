@@ -33,9 +33,9 @@ export default {
 
 .embeddedPlayer {
     position: absolute;
-    top: 0.6vh;
-    left: 0.6vh;
-    width: calc(100% - 1.2vh);
+    top: 0.33vw;
+    left: 0.33vw;
+    width: calc(100% - 0.66vw);
     height: 100%;
 }
 </style>

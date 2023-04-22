@@ -64,33 +64,33 @@ export default {
 .panelBox {
     width: 100%;
     height: 100%;
-    font-size: 1.7vh;
+    font-size: 0.88vw;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 1.5vh;
+    gap: 0.77vw;
 }
 
 .column {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 1.5vh;
+    gap: 0.77vw;
     align-items: flex-start;
 }
 
 .leftColumn {
-    margin-top: 0.75vh;
-    margin-left: 0.75vh;
+    margin-top: 0.39vw;
+    margin-left: 0.39vw;
     /* background-color: green; */
     flex-grow: 1;
 }
 .rightColumn {
-    margin-top: 1.5vh;
-    margin-right: 1.5vh;
+    margin-top: 0.77vw;
+    margin-right: 0.77vw;
     /* background-color: red; */
     flex-grow: 2;
 }
@@ -98,7 +98,7 @@ export default {
 .outerColumn {
     /* background-color: black; */
     flex-grow: 1;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 .innerColumn {
@@ -118,43 +118,43 @@ export default {
     /* background-color: aliceblue; */
     width: 100%;
     flex-grow: 1;
-    margin-bottom: 1.5vh;
+    margin-bottom: 0.77vw;
 }
 .bottomRightRow {
     /* background-color: orange; */
     justify-content: space-around;
     width: 100%;
     flex-grow: 1;
-    margin-bottom: 1.5vh;
+    margin-bottom: 0.77vw;
 }
 
 .logo {
-    height: 29.5vh;
+    height: 15.2vw;
     align-self: center;
 }
 .watch-pane {
-    height: 45vh;
+    height: 25vw;
 }
 
 .shows-pane {
-    height: 40vh;
+    height: 20.6vw;
     align-self: flex-end;
-    margin-bottom: 1.5vh;
+    margin-bottom: 0.77vw;
 }
 
 .featherpluck-pane {
-    height: 17.5vh;
+    height: 9vw;
     align-self: center;
-    margin-right: 1.5vh;
+    margin-right: 0.77vw;
 }
 
 .renaissance-pane {
-    height: 21vh;
+    height: 10.8vw;
     align-self: center;
 }
 
 .contact-pane-box {
-    height: 22.5vh;
+    height: 11.6vw;
     align-self: flex-end;
     position: relative;
 }
@@ -187,21 +187,21 @@ export default {
     user-select: none;
 }
 .buy-pane {
-    height: 22.5vh;
+    height: 11.6vw;
     align-self: center;
 }
 
 .listen-pane {
-    height: 69vh;
+    height: 35.6vw;
 }
 
 .magic-pane {
-    height: 29.5vh;
+    height: 15.2vw;
     align-self: center;
 }
 
 .fairy-ring-pane {
-    height: 24vh;
+    height: 12.4vw;
 }
 
 .about-pane {
@@ -211,7 +211,7 @@ export default {
 }
 .about-pane-box {
     align-self: flex-end;
-    height: 32vh;
+    height: 16.5vw;
 }
 
 .about-text {

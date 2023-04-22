@@ -21,6 +21,6 @@ export default {
 
 <style scoped>
 img {
-  border: 0.6vh solid var(--accentColor);
+  border: 0.33vw solid var(--accentColor);
 }
 </style>

@@ -40,9 +40,9 @@ export default {
     Spotify iframe has some weird positioning bugs and leaves a slight transparent border, so we 
     compensate by making it slightly larger than the box that needs to contain it. 
     */
-    top: 0.58vh;
-    left: 0.58vh;
-    width: calc(100% - 1.16vh);
+    top: 0.3vw;
+    left: 0.3vw;
+    width: calc(100% - 0.6vw);
     height: 100%;
     background-color: blue;
 }
