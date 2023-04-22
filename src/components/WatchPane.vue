@@ -35,7 +35,7 @@ export default {
     position: absolute;
     top: 0.33vw;
     left: 0.33vw;
-    width: calc(100% - 0.66vw);
-    height: 100%;
+    width: 100%;
+    height: 96.3%
 }
 </style>

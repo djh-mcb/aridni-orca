@@ -6,10 +6,7 @@
                     <ListenPane class="listen-pane"/>
                 </div>
                 <div class="outerColumn column">
-                    <div class="about-pane-box clickable" @click="this.$router.push({name: 'about'})">
-                        <ImagePane class="about-pane" source="harp-playing.gif"/>
-                        <div class="about-text"></div>
-                    </div>
+                    <ImagePane class="about-pane clickable" @click="this.$router.push({name: 'about'})" source="harp-playing.gif" />
                     <CyclingImagePane class="magic-pane" :panes=magicPanes />
                 </div>
             </div>
@@ -75,6 +72,12 @@ export default {
     gap: 0.77vw;
 }
 
+@media (orientation: portrait) {
+    .panelBox {
+        flex-direction: column;
+    }
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -86,7 +89,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 0.77vw;
+    gap: 2vw;
     align-items: flex-start;
 }
 
@@ -150,15 +153,15 @@ export default {
 }
 
 .logo {
-    height: 15.2vw;
+    width: 10vw;
     align-self: center;
 }
 .watch-pane {
-    height: 25vw;
+    width: 25vw;
 }
 
 .shows-pane {
-    height: 20.6vw;
+    width: 10vw;
     align-self: flex-end;
     margin-bottom: 0.77vw;
 }
@@ -175,8 +178,8 @@ export default {
 }
 
 .contact-pane-box {
-    height: 11.6vw;
-    align-self: flex-end;
+    width: 11.6vw;
+    align-self: flex-start;
     position: relative;
 }
 
@@ -208,42 +211,26 @@ export default {
     user-select: none;
 }
 .buy-pane {
-    height: 11.6vw;
+    width: 25vw;
     align-self: center;
 }
 
 .listen-pane {
-    height: 35.6vw;
+    width: 20vw;
 }
 
 .magic-pane {
-    height: 15.2vw;
+    width: 10vw;
     align-self: center;
 }
 
 .fairy-ring-pane {
-    height: 12.4vw;
+    width: 12.4vw;
 }
 
 .about-pane {
-    height: 75%;
-    align-self: center;
-    padding-top: 50%; /* Space for the 'about' text svg*/
-}
-.about-pane-box {
+    width: 7vw;
     align-self: flex-end;
-    height: 16.5vw;
-}
-
-.about-text {
-    align-self: center;
-    background-color: red;
-    width: 100%;
-    height: 27%;
-    margin-top: -225%;
-    -webkit-mask: url(../assets/images/about.svg) no-repeat center;
-    mask: url(../assets/images/about.svg) no-repeat center;
-    mask-size: 90%, 90%;
 }
 </style>
   

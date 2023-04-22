@@ -36,21 +36,17 @@ export default {
 
 .embeddedPlayer {
     position: absolute;
-    /* 
-    Spotify iframe has some weird positioning bugs and leaves a slight transparent border, so we 
-    compensate by making it slightly larger than the box that needs to contain it. 
-    */
     top: 0.3vw;
-    left: 0.3vw;
-    width: calc(100% - 0.6vw);
-    height: 100%;
+    left: 0.33vw;
+    height: 97.5%;
+    width: 100%;
     background-color: blue;
 }
 
 .returnToVideoButton {
   position: absolute;
-  height: 20%;
-  top: 80%;
+  width: 20%;
+  top: 78%;
   left: 0;
 }
 </style>
