@@ -8,7 +8,7 @@
                 <img class="littleLogo clickable" src="../assets/images/logo-orange.png" @click="this.$router.push({name : 'home'})">
             </div>
         </div>
-        <img class="crystalSword imageFlip" transform=scaleX(-1) src="../assets/images/crystal-sword.gif">
+        <img class="crystalSword imageFlip" src="../assets/images/crystal-sword.gif">
     </div>
 </template>
 

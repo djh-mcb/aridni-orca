@@ -128,32 +128,32 @@ export default {
 }
 
 .logo {
-    height: 17em;
+    height: 29.5vh;
     align-self: center;
 }
 .watch-pane {
-    height: 25em;
+    height: 45vh;
 }
 
 .shows-pane {
-    height: 20em;
+    height: 40vh;
     align-self: flex-end;
     margin-bottom: 1em;
 }
 
 .featherpluck-pane {
-    height: 10em;
+    height: 17.5vh;
     align-self: center;
     margin-right: 4em;
 }
 
 .renaissance-pane {
-    height: 12em;
+    height: 21vh;
     align-self: center;
 }
 
 .contact-pane-box {
-    height: 13em;
+    height: 22.5vh;
     align-self: flex-end;
     position: relative;
 }
@@ -186,39 +186,39 @@ export default {
     user-select: none;
 }
 .buy-pane {
-    height: 13em;
+    height: 22.5vh;
     align-self: center;
 }
 
 .listen-pane {
-    height: 40em;
+    height: 69vh;
 }
 
 .magic-pane {
-    height: 17em;
+    height: 29.5vh;
     align-self: center;
 }
 
 .fairy-ring-pane {
-    height: 14em;
+    height: 24vh;
 }
 
 .about-pane {
-    height: 14em;
+    height: 75%;
     align-self: center;
-    padding-top: 4em; /* Space for the 'about' text svg*/
+    padding-top: 50%; /* Space for the 'about' text svg*/
 }
 .about-pane-box {
     align-self: flex-end;
-    height: 45%;
+    height: 32vh;
 }
 
 .about-text {
     align-self: center;
     background-color: red;
     width: 100%;
-    height: 5em;
-    margin-top: -18em;
+    height: 27%;
+    margin-top: -225%;
     -webkit-mask: url(../assets/images/about.svg) no-repeat center;
     mask: url(../assets/images/about.svg) no-repeat center;
     mask-size: 90%, 90%;

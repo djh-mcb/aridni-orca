@@ -3,7 +3,7 @@
     <NavigationPane class="listenPane" source="listen-image.gif" accentColor="blue" text="listen" @click="showPlayer = true"/>
     <iframe v-show=showPlayer class="embeddedPlayer" src="https://open.spotify.com/embed/artist/0H4Y63FfweRZmLlIohWamc?utm_source=generator&theme=1" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     <ImagePane v-show=showPlayer class="returnToVideoButton clickable" source="listen-image.gif" accentColor="blue" @click="showPlayer = false"/>
-</div>
+  </div>
 </template>
 
 <script>

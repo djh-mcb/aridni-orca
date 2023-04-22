@@ -1,6 +1,8 @@
 <template>
-    <WelcomeLogo @click="goToHome"/>
-    <SocialsBar className="socialsBar"/>
+    <div>
+        <WelcomeLogo @click="goToHome"/>
+        <SocialsBar className="socialsBar"/>
+    </div>
 </template>
 
 <script>
