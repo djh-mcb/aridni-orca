@@ -167,13 +167,13 @@ export default {
 }
 
 .featherpluck-pane {
-    height: 9vw;
+    width: 9vw;
     align-self: center;
     margin-right: 0.77vw;
 }
 
 .renaissance-pane {
-    height: 10.8vw;
+    width: 9vw;
     align-self: flex-end;
 }
 
