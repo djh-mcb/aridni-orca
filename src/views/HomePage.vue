@@ -128,7 +128,7 @@ export default {
     flex-grow: 1;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .topRow {
