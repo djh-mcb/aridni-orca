@@ -64,32 +64,33 @@ export default {
 .panelBox {
     width: 100%;
     height: 100%;
+    font-size: 1.7vh;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 1em;
+    gap: 1.5vh;
 }
 
 .column {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 1em;
+    gap: 1.5vh;
     align-items: flex-start;
 }
 
 .leftColumn {
-    margin-top: 0.5em;
-    margin-left: 0.5em;
+    margin-top: 0.75vh;
+    margin-left: 0.75vh;
     /* background-color: green; */
     flex-grow: 1;
 }
 .rightColumn {
-    margin-top: 1em;
-    margin-right: 1em;
+    margin-top: 1.5vh;
+    margin-right: 1.5vh;
     /* background-color: red; */
     flex-grow: 2;
 }
@@ -117,14 +118,14 @@ export default {
     /* background-color: aliceblue; */
     width: 100%;
     flex-grow: 1;
-    margin-bottom: 1em;
+    margin-bottom: 1.5vh;
 }
 .bottomRightRow {
     /* background-color: orange; */
     justify-content: space-around;
     width: 100%;
     flex-grow: 1;
-    margin-bottom: 1em;
+    margin-bottom: 1.5vh;
 }
 
 .logo {
@@ -138,13 +139,13 @@ export default {
 .shows-pane {
     height: 40vh;
     align-self: flex-end;
-    margin-bottom: 1em;
+    margin-bottom: 1.5vh;
 }
 
 .featherpluck-pane {
     height: 17.5vh;
     align-self: center;
-    margin-right: 4em;
+    margin-right: 1.5vh;
 }
 
 .renaissance-pane {

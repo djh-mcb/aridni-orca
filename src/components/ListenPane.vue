@@ -31,14 +31,18 @@ export default {
 
 .listenPane {
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 .embeddedPlayer {
     position: absolute;
-    top: 5px;
-    left: 5px;
-    width: calc(100% - 10px);
+    /* 
+    Spotify iframe has some weird positioning bugs and leaves a slight transparent border, so we 
+    compensate by making it slightly larger than the box that needs to contain it. 
+    */
+    top: 0.58vh;
+    left: 0.58vh;
+    width: calc(100% - 1.16vh);
     height: 100%;
     background-color: blue;
 }
