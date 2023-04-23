@@ -29,6 +29,17 @@ export default {
     top: calc(100% - 3.5em);
     left: 1em;
     height: 2.5em;
+    width: 15em;
 }
+
+@media (max-aspect-ratio: 10/15) {
+    .socialsBar {
+        position: relative;
+        width: 90%;
+        margin: auto;
+        left: 0;
+    }
+}
+
 </style>
   

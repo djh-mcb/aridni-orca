@@ -183,6 +183,7 @@ export default {
     width: 70%;
     height: 70%;
     border-radius: 100%;
+    background-color: blue;
 }
 
 .contact-info {
@@ -220,7 +221,7 @@ export default {
     align-self: flex-end;
 }
 
-@media (max-aspect-ratio: 14/10) {
+@media (max-aspect-ratio: 14/10), (max-width: 1200px){
     .panelBox {
         flex-direction: column;
         flex-wrap: column wrap;
@@ -264,6 +265,7 @@ export default {
 
     .renaissance-pane {
         width: 20vw;
+        align-self: center;
     }
 
     .fairy-ring-pane {
@@ -287,9 +289,17 @@ export default {
         flex-wrap: column wrap;
         font-size: 5vw;
     }
+    .row{ 
+        gap: 5vw;
+    }
+
+    .column {
+        gap: 5vw;
+    }
 
     .listen-pane {
         width: 90vw;
+        margin-top: 5vw;
     }
 
     .about-pane {
@@ -305,7 +315,7 @@ export default {
     }
 
     .buy-pane {
-        width: 60vw;
+        width: 70vw;
     }
 
     .featherpluck-pane {
@@ -315,6 +325,7 @@ export default {
     .watch-pane {
         width: 90vw;
         align-self: center;
+        margin-top: 5vw;
     }
 
     .leftColumn {
