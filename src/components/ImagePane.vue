@@ -1,5 +1,7 @@
 <template>
-  <img :src="require(`@/assets/images/${source}`)" :style="cssProps">
+  <div>
+    <img :src="require(`@/assets/images/${source}`)" :style="cssProps">
+  </div>
 </template>
 
 <script>
@@ -21,6 +23,8 @@ export default {
 
 <style scoped>
 img {
-  border: 0.33vw solid var(--accentColor);
+  border: var(--border-size) solid var(--accentColor);
+  width: calc(100% - var(--border-size) * 2 + 1px);
+  display: block;
 }
 </style>

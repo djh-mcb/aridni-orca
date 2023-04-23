@@ -17,6 +17,22 @@ export default {
 </script>
 
 <style>
+:root {
+  --border-size: 0.33vw;
+}
+
+@media (max-aspect-ratio: 14/10) {
+  :root {
+    --border-size: 0.7vw;
+  }
+}
+
+@media (max-aspect-ratio: 10/15) {
+  :root {
+    --border-size: 1.5vw;
+  }
+}
+
 #app {
   font-family: 'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;

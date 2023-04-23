@@ -33,7 +33,7 @@ export default {
 <style scoped>
 .container {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 #text {

@@ -68,14 +68,8 @@ export default {
     font-size: 0.88vw;
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-wrap: row-reverse wrap;
     gap: 0.77vw;
-}
-
-@media (orientation: portrait) {
-    .panelBox {
-        flex-direction: column;
-    }
 }
 
 .row {
@@ -100,25 +94,21 @@ export default {
 .rightSide {
     margin-top: 0.77vw;
     margin-right: 0.77vw;
-    /* background-color: red; */
     flex-grow: 1;
 }
 
 .leftColumn {
     margin-top: 0.39vw;
     margin-left: 0.39vw;
-    /* background-color: green; */
     flex-grow: 1;
 }
 
 .outerColumn {
-    /* background-color: black; */
     flex-grow: 1;
     justify-content: space-around;
 }
 
 .innerLeftColumn {
-    /* background-color: brown; */
     flex-grow: 1;
     justify-content: space-around;
 }
@@ -139,13 +129,11 @@ export default {
 
 .bottomLeftRow {
     justify-content: space-around;
-    /* background-color: aliceblue; */
     width: 100%;
     flex-grow: 1;
     margin-bottom: 0.77vw;
 }
 .bottomRightRow {
-    /* background-color: orange; */
     justify-content: space-around;
     width: 100%;
     flex-grow: 1;
@@ -194,7 +182,6 @@ export default {
     left: 15%;
     width: 70%;
     height: 70%;
-    background-color: blue;
     border-radius: 100%;
 }
 
@@ -231,6 +218,134 @@ export default {
 .about-pane {
     width: 7vw;
     align-self: flex-end;
+}
+
+@media (max-aspect-ratio: 14/10) {
+    .panelBox {
+        flex-direction: column;
+        flex-wrap: column wrap;
+        font-size: 2vw;
+    }
+
+    .listen-pane {
+        width: 40vw;
+    }
+
+    .about-pane {
+        width: 10vw;
+        align-self: center;
+    }
+
+    .magic-pane {
+        width: 20vw;
+        align-self: flex-start;
+    }   
+
+    .buy-pane {
+        width: 60vw;
+    }
+
+    .featherpluck-pane {
+        width: 20vw;
+    }
+
+    .watch-pane {
+        width: 50vw;
+        align-self: center;
+    }
+
+    .shows-pane {
+        width: 20vw;
+    }
+
+    .logo {
+        width: 20vw;
+    }
+
+    .renaissance-pane {
+        width: 20vw;
+    }
+
+    .fairy-ring-pane {
+        width: 20vw;
+    }
+
+    .innerLeftColumn {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap row;
+    }
+
+    .contact-pane-box {
+        width: 30vw;
+    }
+}
+
+@media (max-aspect-ratio: 10/15) {
+    .panelBox {
+        flex-direction: column;
+        flex-wrap: column wrap;
+        font-size: 5vw;
+    }
+
+    .listen-pane {
+        width: 90vw;
+    }
+
+    .about-pane {
+        width: 40vw;
+    }
+
+    .magic-pane {
+        width: 40vw;
+    }
+
+    .outerColumn {
+        flex-direction: row;
+    }
+
+    .buy-pane {
+        width: 60vw;
+    }
+
+    .featherpluck-pane {
+        width: 20vw;
+    }
+
+    .watch-pane {
+        width: 90vw;
+        align-self: center;
+    }
+
+    .leftColumn {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .shows-pane {
+        width: 50vw;
+    }
+
+    .logo {
+        width: 40vw;
+    }
+
+    .renaissance-pane {
+        width: 30vw;
+    }
+
+    .fairy-ring-pane {
+        width: 50vw;
+    }
+
+    .innerLeftColumn {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap row;
+    }
+
+    .contact-pane-box {
+        width: 70vw;
+    }
 }
 </style>
   
