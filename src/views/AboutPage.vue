@@ -3,12 +3,16 @@
         <img class="crystalSword" src="../assets/images/crystal-sword.gif">
         <div class="parchmentBox">
             <div>
-                <img class="indiFace" src="../assets/images/indi-face.png">
+                <div class="imageFlex">
+                    <img class="littleCrystalSword" src="../assets/images/crystal-sword.gif">
+                    <img class="indiFace" src="../assets/images/indi-face.png">
+                    <img class="littleCrystalSword" src="../assets/images/crystal-sword.gif">
+                </div>
                 <body>.・゜゜・✧･: *✧･:*゜・．<br/><br/>aridni orca is a London-based artist, multi-instrumentalist, producer, and composer. Her music is characterised by a distinct hybrid sound that explores electronic elements, processed environmental samples, and classical arrangements.</body>
                 <img class="littleLogo clickable" src="../assets/images/logo-orange.png" @click="this.$router.push({name : 'home'})">
             </div>
         </div>
-        <img class="crystalSword imageFlip" src="../assets/images/crystal-sword.gif">
+        <img class="crystalSword" src="../assets/images/crystal-sword.gif">
     </div>
 </template>
 
@@ -26,25 +30,35 @@ export default {
     flex-wrap: wrap;
 }
 
+.imageFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    height: 35vh;
+    width: 75%;
+    margin: auto;
+    margin-top: 15vh;   
+    margin-bottom: 1.82vh;
+}
+
 .crystalSword {
-    height: 40em;
+    height: 70vh;
     align-self: center;
 }
 
-.imageFlip {
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+.littleCrystalSword {
+    display: none;
 }
 
 .parchmentBox {
-    height: 53em;
-    width: 40em;
-    margin-top: 1em;
+    height: fit-content;
+    width: 45vw;
+    margin-top: 2.5vh;
     background-image: url("../assets/images/parchment.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    font-size: 1.82vh;
 }
 
 .parchment {
@@ -55,34 +69,61 @@ export default {
 }
 
 .indiFace {
-    position: relative;
-    height: 20em;
-    margin: auto;
-    margin-top: 8em;   
-    margin-bottom: 1em;
+    height: 100%;
 }
 
 .littleLogo {
-    height: 6em;
-    margin-top: 1em;
-}
-
-@font-face {
-    font-family: 'Luminari-Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../assets/fonts/Luminari-Regular.woff') format('woff');
+    height: 11vh;
+    margin-top: 1.82vh;
+    margin-bottom: 15vh;
 }
 
 body {
-    width: calc(100% - 15em);
+    width: 60%;
     height: 100%;
     margin: auto;
-    top: 10em;
+    top: 18vh;
     font-family: 'Luminari-Regular';
     font-style: normal;
     font-size: 90%;
     color: midnightblue;
+}
+
+@media (max-aspect-ratio: 1/1), (max-width: 1200px){
+    .crystalSword {
+        display: none;
+    }
+
+    .littleCrystalSword {
+        display: inline;
+        height: 60%;
+    }
+
+    .imageFlex {
+        height: 18em;
+    }
+
+    .littleLogo {
+        margin-bottom: 30vw;
+        height: 25vw;
+    }
+
+    .parchmentBox {
+        width: 95vw;
+        font-size: 3.6vw;
+    }
+
+    .imageFlex {
+        margin-top: 35vw;
+    }
+    
+    .parchmentBox{
+        margin-top: 0.5em;
+    }
+
+    body {
+        width: 75%;
+    }
 }
 
 </style>
