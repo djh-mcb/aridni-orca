@@ -45,6 +45,7 @@ export default {
   left: calc(var(--border-size) - 1px);
   background-image: url("../assets/images/parchment.png");
   background-position: center;
+  background-size: 200% 200%;
 }
 
 .showsTextBox {

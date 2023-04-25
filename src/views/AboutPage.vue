@@ -89,7 +89,7 @@ body {
     color: midnightblue;
 }
 
-@media (max-aspect-ratio: 1/1), (max-width: 1200px){
+@media (max-width: 1025px) {
     .crystalSword {
         display: none;
     }

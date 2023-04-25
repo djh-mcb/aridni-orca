@@ -21,13 +21,13 @@ export default {
   --border-size: 0.33vw;
 }
 
-@media (max-aspect-ratio: 14/10) {
+@media (max-width: 1025px) {
   :root {
     --border-size: 0.7vw;
   }
 }
 
-@media (max-aspect-ratio: 10/15) {
+@media (max-width: 641px) {
   :root {
     --border-size: 1.5vw;
   }

@@ -32,7 +32,7 @@ export default {
     width: 15em;
 }
 
-@media (max-aspect-ratio: 10/15) {
+@media (max-width: 641px) {
     .socialsBar {
         position: relative;
         width: 90%;

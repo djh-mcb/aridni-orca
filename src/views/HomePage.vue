@@ -223,7 +223,7 @@ export default {
     align-self: flex-end;
 }
 
-@media (max-aspect-ratio: 14/10), (max-width: 1200px){
+@media (max-width: 1025px), (max-width: 1200px){
     .panelBox {
         flex-direction: column;
         flex-wrap: column wrap;
@@ -285,7 +285,7 @@ export default {
     }
 }
 
-@media (max-aspect-ratio: 10/15) {
+@media (max-width: 641px) {
     .panelBox {
         flex-direction: column;
         flex-wrap: column wrap;
