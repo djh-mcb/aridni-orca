@@ -63,4 +63,12 @@ export default {
   width: 100%;
   height: 100%;
 }
+
+@font-face {
+    font-family: 'Luminari-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Luminari-Regular.woff') format('woff');
+}
+
 </style>

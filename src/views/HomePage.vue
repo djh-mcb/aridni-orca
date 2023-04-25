@@ -19,7 +19,7 @@
             <div class="leftColumn column">
                 <WatchPane class="watch-pane" source="watch-image.gif" accentColor="pink" text="watch" destination="watch"/>
                 <div class="bottomLeftRow row">
-                    <NavigationPane class="shows-pane" source="shows-image.gif" accentColor="#bcb9af" text="shows"/>
+                    <ShowsPane class="shows-pane"/>
                     <img class="logo clickable" src="../assets/images/logo-orange.png" @click="this.$router.push({ name: 'welcome' });">
                 </div>
             </div>
@@ -40,6 +40,7 @@ import NavigationPane from '../components/NavigationPane.vue'
 import ImagePane from '../components/ImagePane.vue'
 import CyclingImagePane from '../components/CyclingImagePane.vue'
 import ListenPane from '../components/ListenPane.vue'
+import ShowsPane from '../components/ShowsPane.vue'
 import WatchPane from '../components/WatchPane.vue'
 
 export default {
@@ -56,6 +57,7 @@ export default {
         ImagePane,
         CyclingImagePane,
         ListenPane,
+        ShowsPane,
         WatchPane
     },
 }
@@ -149,7 +151,7 @@ export default {
 }
 
 .shows-pane {
-    width: 10vw;
+    width: 12vw;
     align-self: flex-end;
     margin-bottom: 0.77vw;
 }
