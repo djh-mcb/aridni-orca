@@ -62,6 +62,12 @@ export default {
   color: midnightblue;
 }
 
+@media (pointer:none), (pointer:coarse) {
+  .showsTextBox {
+    width: calc(100% - var(--border-size) * 2 + 2px);
+  }
+}
+
 .showsTextBox:hover {
   scrollbar-color: #bcb9af transparent;
 }
