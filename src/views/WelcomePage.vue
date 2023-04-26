@@ -2,7 +2,7 @@
     <div>
         <div v-if="loadAssets() || !assetsLoaded" class="loadingScreen">
             <div class="loadingText">
-                loading
+                .・゜゜*・LOADING✧･:*゜・．.
                 <div class="loadingBar">
                     <div :style="{width: getProgressPercentage()}" class="loadingProgress"></div>
                 </div>
@@ -101,13 +101,13 @@ export default {
     width: 100%;
     color: #ff6100;
     font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
+    /* font-style: normal; */
 }
 
 .loadingBar {
     border: 1px solid #ff6100;
     height: 1em;
-    width: 10em;
+    width: 15em;
     position: relative;
     margin: auto;
 }
