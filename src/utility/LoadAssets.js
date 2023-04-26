@@ -1,7 +1,9 @@
 export default function PreloadAssets(assets) {
     function loadAsset(src) {
         return new Promise((resolve, reject) => {
+            src = window.location.pathname + src;
             var asset;
+
             if (src.endsWith(".mp4")) {
                 asset = document.createElement('video');
                 asset.oncanplay = function() {
