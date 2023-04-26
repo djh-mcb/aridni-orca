@@ -63,14 +63,30 @@ export default {
   color: midnightblue;
 }
 
+.showsTextBox:hover {
+  scrollbar-color: #bcb9af transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bcb9af;
+  border-radius: 5px;
+}
+
 @media (pointer:none), (pointer:coarse) {
   .showsTextBox {
     width: calc(100% - var(--border-size) * 2 + 2px);
   }
-}
 
-.showsTextBox:hover {
-  scrollbar-color: #bcb9af transparent;
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
 }
 
 .showsText {
