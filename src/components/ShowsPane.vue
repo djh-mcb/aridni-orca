@@ -1,16 +1,16 @@
 <template>
   <div class="showsPaneBox">
-    <NavigationPane class="showsPane" source="shows-image.gif" accentColor="#bcb9af" text="shows" @click="showInfo= true"/>
+    <NavigationPane class="showsPane" source="shows-image.webp" accentColor="#bcb9af" text="shows" @click="showInfo= true"/>
     <div v-show="showInfo" class="parchmentBackground"></div>
     <div v-show=showInfo class="showsTextBox">
       <div class="showsText">
-        <br>゜・future * ✧<br><br>tba<br><br>✧: * past ゜:<br><br>evade house at madrid fashion week<br>19/9/22 <br><br>peckham audio<br>13/4/23 
+        <br>゜・future * ✧<br><br>tba<br><br>✧: * past ゜:<br><br>evade house at madrid fashion week<br>19/9/22 <br><br>peckham audio<br>13/4/23
         <div class="swords">
-          <img class="crystalSword" src="../assets/images/crystal-sword.gif">
+          <img class="crystalSword" src="../assets/images/crystal-sword.webp">
         </div>
       </div>
     </div>
-    <ImagePane v-show=showInfo class="returnToVideoButton clickable" source="shows-image.gif" accentColor="#bcb9af" @click="showInfo= false"/>
+    <ImagePane v-show=showInfo class="returnToVideoButton clickable" source="shows-image.webp" accentColor="#bcb9af" @click="showInfo= false"/>
   </div>
 </template>
 
@@ -43,7 +43,7 @@ export default {
   position: absolute;
   top: calc(var(--border-size) - 1px);
   left: calc(var(--border-size) - 1px);
-  background-image: url("../assets/images/parchment.png");
+  background-image: url("../assets/images/parchment.webp");
   background-position: center;
   background-size: 200% 200%;
 }

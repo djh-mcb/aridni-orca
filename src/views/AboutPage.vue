@@ -1,18 +1,18 @@
 <template>
     <div class="pageBox">
-        <img class="crystalSword" src="../assets/images/crystal-sword.gif">
+        <img class="crystalSword" src="../assets/images/crystal-sword.webp">
         <div class="parchmentBox">
             <div>
                 <div class="imageFlex">
-                    <img class="littleCrystalSword" src="../assets/images/crystal-sword.gif">
-                    <img class="indiFace" src="../assets/images/indi-face.png">
-                    <img class="littleCrystalSword" src="../assets/images/crystal-sword.gif">
+                    <img class="littleCrystalSword" src="../assets/images/crystal-sword.webp">
+                    <img class="indiFace" src="../assets/images/indi-face.webp">
+                    <img class="littleCrystalSword" src="../assets/images/crystal-sword.webp">
                 </div>
                 <body>.・゜゜・✧･: *✧･:*゜・．<br/><br/>aridni orca is a London-based artist, multi-instrumentalist, producer, and composer. Her music is characterised by a distinct hybrid sound that explores electronic elements, processed environmental samples, and classical arrangements.</body>
-                <img class="littleLogo clickable" src="../assets/images/logo-orange.png" @click="this.$router.push({name : 'home'})">
+                <img class="littleLogo clickable" src="../assets/images/logo-orange.webp" @click="this.$router.push({name : 'home'})">
             </div>
         </div>
-        <img class="crystalSword" src="../assets/images/crystal-sword.gif">
+        <img class="crystalSword" src="../assets/images/crystal-sword.webp">
     </div>
 </template>
 
@@ -38,7 +38,7 @@ export default {
     height: 35vh;
     width: 75%;
     margin: auto;
-    margin-top: 15vh;   
+    margin-top: 15vh;
     margin-bottom: 1.82vh;
 }
 
@@ -55,7 +55,7 @@ export default {
     height: fit-content;
     width: 45vw;
     margin-top: 2.5vh;
-    background-image: url("../assets/images/parchment.png");
+    background-image: url("../assets/images/parchment.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     font-size: 1.82vh;
@@ -116,7 +116,7 @@ body {
     .imageFlex {
         margin-top: 35vw;
     }
-    
+
     .parchmentBox{
         margin-top: 0.5em;
     }
@@ -127,4 +127,3 @@ body {
 }
 
 </style>
-  

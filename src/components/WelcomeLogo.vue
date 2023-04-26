@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="../assets/images/logo-pink.png" id="welcome-logo" class="clickable">
+    <img src="../assets/images/logo-pink.webp" id="welcome-logo" class="clickable">
   </div>
 </template>
 

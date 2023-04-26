@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <video autoplay muted loop id="background-video" src="./assets/videos/background-video.mp4" type="video/mp4"/>
+    <video autoplay muted loop playsinline id="background-video" src="./assets/videos/background-video.mp4" type="video/mp4"/>
     <router-view class="mainView"></router-view>
   </div>
 </template>
@@ -50,7 +50,7 @@ export default {
 }
 
 .clickable {
-  cursor: url(./assets/images/mushroom-emoji-text-cursor.png) 10 6, move;
+  cursor: url(./assets/images/mushroom-emoji-text-cursor.webp) 10 6, move;
 }
 
 .mainView {

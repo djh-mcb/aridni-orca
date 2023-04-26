@@ -6,28 +6,28 @@
                     <ListenPane class="listen-pane"/>
                 </div>
                 <div class="outerColumn column">
-                    <ImagePane class="about-pane clickable" @click="this.$router.push({name: 'about'})" source="harp-playing.gif" />
+                    <ImagePane class="about-pane clickable" @click="this.$router.push({name: 'about'})" source="harp-playing.webp" />
                     <CyclingImagePane class="magic-pane" :panes=magicPanes />
                 </div>
             </div>
             <div class="bottomRightRow row">
-                <a href="https://aridniorca.bandcamp.com/"><NavigationPane class="buy-pane" source="buy-image.jpeg" accentColor="white" text="buy"/></a>
-                <ImagePane class="featherpluck-pane" source="featherpluck-art.png" accentColor="#ceeefd"/>
+                <a href="https://aridniorca.bandcamp.com/"><NavigationPane class="buy-pane" source="buy-image.webp" accentColor="white" text="buy"/></a>
+                <ImagePane class="featherpluck-pane" source="featherpluck-art.webp" accentColor="#ceeefd"/>
             </div>
         </div>
         <div class="leftSide row">
             <div class="leftColumn column">
-                <WatchPane class="watch-pane" source="watch-image.gif" accentColor="pink" text="watch" destination="watch"/>
+                <WatchPane class="watch-pane" source="watch-image.webp" accentColor="pink" text="watch" destination="watch"/>
                 <div class="bottomLeftRow row">
                     <ShowsPane class="shows-pane"/>
-                    <img class="logo clickable" src="../assets/images/logo-orange.png" @click="this.$router.push({ name: 'welcome' });">
+                    <img class="logo clickable" src="../assets/images/logo-orange.webp" @click="this.$router.push({ name: 'welcome' });">
                 </div>
             </div>
             <div class="innerLeftColumn column">
-                <ImagePane class="renaissance-pane" source="renaissance.jpg" accentColor="orange"/>
+                <ImagePane class="renaissance-pane" source="renaissance.webp" accentColor="orange"/>
                 <CyclingImagePane class="fairy-ring-pane" :panes=fairyPanes />
                 <div class="contact-pane-box" @click="showContactInfo=!showContactInfo">
-                    <NavigationPane class="contact-pane" source="bubble.gif" textColor="#ff6100" text="contact"/>
+                    <NavigationPane class="contact-pane" source="bubble.webp" textColor="#ff6100" text="contact"/>
                     <div class="contact-info-bubble clickable" v-show="showContactInfo"><div class="contact-info">aridni.orca at &nbsp; &nbsp; gmail dot com</div></div>
                 </div>
             </div>
@@ -46,9 +46,9 @@ import WatchPane from '../components/WatchPane.vue'
 export default {
     name: 'HomePage',
     data() {
-        return {    
-            magicPanes: [{source: 'mushrooms.jpg', accentColor: 'red'}, {source: 'magic-card.png', accentColor: 'transparent'}],
-            fairyPanes: [{source: "fairy-ring.jpg", accentColor:  'transparent'}, {source: 'fairy-facts.png', accentColor: 'transparent'}],
+        return {
+            magicPanes: [{source: 'mushrooms.webp', accentColor: 'red'}, {source: 'magic-card.png', accentColor: 'transparent'}],
+            fairyPanes: [{source: "fairy-ring.webp", accentColor:  'transparent'}, {source: 'fairy-facts.png', accentColor: 'transparent'}],
             showContactInfo: false
         }
     },
@@ -242,7 +242,7 @@ export default {
     .magic-pane {
         width: 20vw;
         align-self: flex-start;
-    }   
+    }
 
     .buy-pane {
         width: 60vw;
@@ -291,7 +291,7 @@ export default {
         flex-wrap: column wrap;
         font-size: 5vw;
     }
-    .row{ 
+    .row{
         gap: 5vw;
     }
 
@@ -361,4 +361,3 @@ export default {
     }
 }
 </style>
-  
