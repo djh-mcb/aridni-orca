@@ -8,7 +8,7 @@
                 </div>
             </div>
         </div>
-        <WelcomeLogo v-show="assetsLoaded" @click="goToHome"/>
+        <WelcomeLogo v-show="true || assetsLoaded" @click="goToHome"/>
         <SocialsBar className="socialsBar"/>
     </div>
 </template>
@@ -97,6 +97,7 @@ export default {
     display: flex;
     align-items: center;
     justify-items: center;
+    display: none;
 }
 
 .loadingText {
