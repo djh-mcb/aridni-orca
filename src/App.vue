@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <video v-show=!backupBackgroundRequired :onplay="this.backupBackgroundRequired = false" autoplay muted loop playsinline id="background-video" src="./assets/videos/background-video.mp4" type="video/mp4"/>
+    <video v-show=!backupBackgroundRequired @play="backupBackgroundRequired = false" autoplay muted loop playsinline id="background-video" src="./assets/videos/background-video.mp4" type="video/mp4"/>
     <img v-if=backupBackgroundRequired id="background-video" src="./assets/images/background-video-backup.webp">
     <router-view class="mainView"></router-view>
   </div>
