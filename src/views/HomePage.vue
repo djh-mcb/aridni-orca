@@ -47,8 +47,8 @@ export default {
     name: 'HomePage',
     data() {
         return {
-            magicPanes: [{source: 'mushrooms.webp', accentColor: 'red'}, {source: 'magic-card.png', accentColor: 'transparent'}],
-            fairyPanes: [{source: "fairy-ring.webp", accentColor:  'transparent'}, {source: 'fairy-facts.png', accentColor: 'transparent'}],
+            magicPanes: [{source: 'mushrooms.webp', accentColor: 'red'}, {source: 'magic-card.webp', accentColor: 'transparent'}],
+            fairyPanes: [{source: "fairy-ring.webp", accentColor:  'transparent'}, {source: 'fairy-facts.webp', accentColor: 'transparent'}],
             showContactInfo: false
         }
     },
