@@ -31,7 +31,6 @@ export default {
             "loadedAssetCount": 0,
             "assetsToLoad": [
                 "media/background-video.mp4",
-                "img/about.svg",
                 "img/logo-orange.webp",
                 "img/bubble.webp",
                 "img/logo-pink.webp",
