@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="background-video" src="../assets/images/background-png-backup.png">
+    <img class="background-video super-background" src="../assets/images/background-png-backup.png">
     <img src="../assets/images/logo-png-backup.png" id="welcome-logo" class="clickable" @click="openBandcamp">
   </div>
 </template>
@@ -22,6 +22,10 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.super-background {
+  z-index: -2;
 }
 
 @media (orientation: landscape) {

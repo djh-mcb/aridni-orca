@@ -20,11 +20,13 @@ div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 2.5em;
+  width: 15em;
 }
 
 a {
-  height: 100%;
-  width: auto;
+  height: 2.5em;
+  width: 2.5em;
   aspect-ratio: 1 / 1;
   filter: invert(85%) sepia(29%) saturate(4165%) hue-rotate(233deg) brightness(94%) contrast(89%);
 }
