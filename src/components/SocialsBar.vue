@@ -21,7 +21,6 @@ div {
   flex-direction: row;
   justify-content: space-between;
   height: 2.5em;
-  width: 15em;
 }
 
 a {

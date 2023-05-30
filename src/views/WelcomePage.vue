@@ -100,6 +100,7 @@ export default {
     position: absolute;
     top: calc(100% - 3.5em);
     left: 1em;
+    width: 15em;
 }
 
 .loadingScreen {
