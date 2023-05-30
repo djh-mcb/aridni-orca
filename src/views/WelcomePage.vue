@@ -1,11 +1,21 @@
 <template>
     <div>
-        <div v-if="loadAssets() || !assetsLoaded" class="loadingScreen">
-            <div class="loadingText">
+        <div v-if="loadAssets() || !assetsLoaded || loadFailed" class="loadingScreen">
+            <div v-if="!loadFailed" class="loadingText">
                 .・゜゜*・LOADING✧･:*゜・．.
                 <div class="loadingBar">
                     <div :style="{width: getProgressPercentage()}" class="loadingProgress"></div>
                 </div>
+            </div>
+            <div v-if="loadFailed" class="loadingText">
+                .・゜゜*・LOAD FAILED✧･:*゜・．.<br><br>
+                Your browser and/or OS does not<br>
+                support modern .webp images, which<br>
+                are required to view the full<br>
+                version of this website.
+                <br><br>
+                Please update your browser and/or<br>
+                OS, or try a different browser.<br>
             </div>
         </div>
         <WelcomeLogo v-show="assetsLoaded" @click="goToHome"/>
@@ -28,6 +38,7 @@ export default {
         return {
             "loading": false,
             "assetsLoaded": false,
+            "loadFailed": false,
             "loadedAssetCount": 0,
             "assetsToLoad": [
                 "media/background-video.mp4",
@@ -61,11 +72,14 @@ export default {
             if(!this.loading) {
                 this.loading = true;
                 this.loadedAssetCount = 0;
+                this.loadFailed = false;
                 PreloadAssets(this.assetsToLoad).forEach(p => p.then((asset) => {
                     console.log(++(this.loadedAssetCount) + " of " + this.assetsToLoad.length + " loaded " + asset.src);
-                    if(this.loadedAssetCount >= this.assetsToLoad.length) {
+                    if(!this.loadFailed && this.loadedAssetCount >= this.assetsToLoad.length) {
                         this.assetsLoaded = true;
                     }
+                }).catch(() => {
+                    this.loadFailed = true;
                 }));
             }
         },
