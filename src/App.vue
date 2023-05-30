@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <video @play="backupBackgroundRequired = false" autoplay muted loop playsinline id="background-video" src="./assets/videos/background-video.mp4" type="video/mp4"/>
-    <img v-if=backupBackgroundRequired id="background-video" src="./assets/images/background-video-backup.webp">
+    <video @play="backupBackgroundRequired = false" autoplay muted loop playsinline class="background-video" src="./assets/videos/background-video.mp4" type="video/mp4"/>
+    <img v-if=backupBackgroundRequired class="background-video" src="./assets/images/background-video-backup.webp">
     <router-view class="mainView"></router-view>
   </div>
 </template>
@@ -43,7 +43,7 @@ export default {
   font-style: italic;
 }
 
-#background-video {
+.background-video {
   top: 0;
   left: 0;
   position: fixed;

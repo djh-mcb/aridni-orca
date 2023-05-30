@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-if="loadAssets() || !assetsLoaded || loadFailed" class="loadingScreen">
+        <div v-if="loadAssets() || !assetsLoaded" class="loadingScreen">
             <div v-if="!loadFailed" class="loadingText">
                 .・゜゜*・LOADING✧･:*゜・．.
                 <div class="loadingBar">
@@ -16,15 +16,19 @@
                 <br><br>
                 Please update your browser and/or<br>
                 OS, or try a different browser.<br>
+                <br><br>
+                <div class="basicSiteButton clickable" @click="this.assetsLoaded=true">GO TO BASIC SITE</div>
             </div>
         </div>
-        <WelcomeLogo v-show="assetsLoaded" @click="goToHome"/>
+        <WelcomeLogo v-if="assetsLoaded && !loadFailed" @click="goToHome"/>
+        <FallbackWelcomePage v-if="assetsLoaded && loadFailed"/>
         <SocialsBar className="socialsBar"/>
     </div>
 </template>
 
 <script>
 import WelcomeLogo from '../components/WelcomeLogo.vue'
+import FallbackWelcomePage from '../components/FallbackWelcomePage.vue'
 import SocialsBar from '../components/SocialsBar.vue'
 import PreloadAssets from '../utility/LoadAssets.js';
 
@@ -32,6 +36,7 @@ export default {
     name: 'WelcomePage',
     components: {
         WelcomeLogo,
+        FallbackWelcomePage,
         SocialsBar
     },
     data: function() {
@@ -132,6 +137,20 @@ export default {
     left: 0;
     top: 0;
     height: 100%;
+}
+
+.basicSiteButton {
+    background-color: #ff6100;
+    color: blue;
+    font-style: normal;
+    width: 11em;
+    margin: auto;
+    padding: 0.5em;
+    user-select: none;
+}
+
+.basicSiteButton:hover {
+    background-color: #f58540;
 }
 
 @media (max-width: 641px) {
