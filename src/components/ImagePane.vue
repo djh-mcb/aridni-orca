@@ -25,6 +25,7 @@ export default {
 img {
   border: var(--border-size) solid var(--accentColor);
   width: calc(100% - var(--border-size) * 2 + 1px);
+  height: auto;
   display: block;
 }
 </style>

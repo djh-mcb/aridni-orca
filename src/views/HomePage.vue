@@ -144,6 +144,7 @@ export default {
 
 .logo {
     width: 10vw;
+    height: auto;
     align-self: center;
 }
 .watch-pane {

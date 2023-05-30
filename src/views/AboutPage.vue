@@ -44,6 +44,7 @@ export default {
 
 .crystalSword {
     height: 70vh;
+    width: auto;
     align-self: center;
 }
 
@@ -70,10 +71,12 @@ export default {
 
 .indiFace {
     height: 100%;
+    width: auto;
 }
 
 .littleLogo {
     height: 11vh;
+    width: auto;
     margin-top: 1.82vh;
     margin-bottom: 15vh;
 }
@@ -97,6 +100,7 @@ body {
     .littleCrystalSword {
         display: inline;
         height: 60%;
+        width: auto;
     }
 
     .imageFlex {
@@ -110,6 +114,7 @@ body {
 
     .parchmentBox {
         width: 95vw;
+        height: auto;
         font-size: 3.6vw;
     }
 
@@ -123,6 +128,7 @@ body {
 
     body {
         width: 75%;
+        height: auto;
     }
 }
 

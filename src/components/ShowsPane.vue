@@ -115,5 +115,6 @@ export default {
 .crystalSword {
   position: relative;
   width: 15%;
+  height: auto;
 }
 </style>

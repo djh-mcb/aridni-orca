@@ -21,12 +21,14 @@ export default {
 @media (orientation: landscape) {
   #welcome-logo {
     height: 85vh;
+    width: auto;
   }
 }
 
 @media (orientation: portrait) {
   #welcome-logo {
     width: 70vw;
+    height: auto;
   }
 }
 </style>
