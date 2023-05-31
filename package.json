@@ -1,6 +1,7 @@
 {
   "name": "aridni-orca-vue",
   "version": "0.1.0",
+  "homepage": "https://aridniorca.com",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
