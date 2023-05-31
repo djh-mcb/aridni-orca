@@ -9,6 +9,9 @@
 <script>
 export default {
   name: 'App',
+  created() {
+    document.title = "aridni orca";
+  },
   data() {
     return {
       "backupBackgroundRequired": true
