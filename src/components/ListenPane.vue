@@ -1,9 +1,9 @@
 <template>
   <div class="listenPaneBox">
-    <NavigationPane class="listenPane" source="listen-image.webp" accentColor="blue" text="listen" @click="showPlayer = true"/>
+    <NavigationPane class="listenPane" source="listen-image.webp" accentColor="blue" text="listen" @click="showPlayerAndPauseMusic"/>
     <div v-show=showPlayer class="embeddedPlayerBackground"></div>
     <iframe @click="showPlayer = false" v-show=showPlayer class="embeddedPlayer" src="https://open.spotify.com/embed/artist/0H4Y63FfweRZmLlIohWamc?utm_source=generator&theme=1" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    <ImagePane v-show=showPlayer class="returnToVideoButton clickable" source="listen-image.webp" accentColor="blue" @click="showPlayer = false"/>
+    <ImagePane v-show=showPlayer class="returnToVideoButton clickable" source="listen-image.webp" accentColor="blue" @click="hidePlayerAndPlayMusic"/>
   </div>
 </template>
 
@@ -16,6 +16,23 @@ export default {
   components: {
     ImagePane,
     NavigationPane,
+  },
+  methods: {
+    showPlayerAndPauseMusic() {
+      this.showPlayer = true;
+
+      let backgroundMusic = document.getElementById("backgroundMusic");
+      backgroundMusic.pause();
+    },
+    hidePlayerAndPlayMusic() {
+      this.showPlayer = false;
+
+      if(!this.userIsWatching) {
+        let backgroundMusic = document.getElementById("backgroundMusic");
+        backgroundMusic.currentTime = 0;
+        backgroundMusic.play();
+      }
+    }
   },
   data() {
     return {

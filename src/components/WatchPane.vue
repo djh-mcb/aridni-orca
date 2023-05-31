@@ -1,6 +1,6 @@
 <template>
   <div class="watchPaneBox">
-    <NavigationPane class="watchPane" source="watch-image.webp" accentColor=pink text="watch" @click="showPlayer = true"/>
+    <NavigationPane class="watchPane" source="watch-image.webp" accentColor=pink text="watch" @click="showPlayerAndPauseMusic"/>
     <iframe v-show=showPlayer class="embeddedPlayer" src="https://www.youtube.com/embed/bGePQWRfElg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 </template>
@@ -12,6 +12,15 @@ export default {
   name: 'WatchPane',
   components: {
     NavigationPane,
+  },
+  methods: {
+    showPlayerAndPauseMusic() {
+      this.showPlayer = true;
+
+      let backgroundMusic = document.getElementById("backgroundMusic");
+      backgroundMusic.pause();
+      backgroundMusic.volume = 0.0;
+    }
   },
   data() {
     return {
