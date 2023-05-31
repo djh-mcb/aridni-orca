@@ -72,6 +72,9 @@ export default {
     methods: {
         goToHome() {
             this.$router.push({ name: "home" });
+            let backgroundMusic = document.getElementById("backgroundMusic");
+            backgroundMusic.volume = 0.2;
+            backgroundMusic.play();
         },
         loadAssets () {
             if(!this.loading) {
