@@ -59,7 +59,7 @@ export default {
 }
 
 .clickable {
-  cursor: url(./assets/images/mushroom-emoji-text-cursor.webp) 10 6, move;
+  cursor: url(./assets/images/mushroom-emoji-text-cursor.webp) 10 6, pointer;
 }
 
 .mainView {
