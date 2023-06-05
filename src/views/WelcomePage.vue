@@ -9,10 +9,13 @@
             </div>
             <div v-if="loadFailed" class="loadingText">
                 .・゜゜*・LOAD FAILED✧･:*゜・．.<br><br>
-                Your browser and/or OS does not<br>
-                support modern .webp images, which<br>
-                are required to view the full<br>
-                version of this website.
+                Something went wrong! Try refreshing<br>
+                the page and see if it works next time.
+                <br><br>
+                If it keeps happening, your browser<br>
+                and/or OS may not support modern .webp<br>
+                images, which are required to view the<br>
+                full version of this website.
                 <br><br>
                 Please update your browser and/or<br>
                 OS, or try a different browser.<br>
@@ -72,9 +75,13 @@ export default {
     methods: {
         goToHome() {
             this.$router.push({ name: "home" });
+            let chimes = document.getElementById("chimes");
+            chimes.currentTime = 0;
+            chimes.volume = 0.2;
+            chimes.play();
+
             let backgroundMusic = document.getElementById("backgroundMusic");
             backgroundMusic.volume = 0.2;
-            backgroundMusic.currentTime = 0;
             backgroundMusic.play();
         },
         loadAssets () {
@@ -123,7 +130,6 @@ export default {
     width: 100%;
     color: #ff6100;
     font-family: 'Courier New', Courier, monospace;
-    /* font-style: normal; */
 }
 
 .loadingBar {

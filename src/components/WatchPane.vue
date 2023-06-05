@@ -20,6 +20,7 @@ export default {
       let backgroundMusic = document.getElementById("backgroundMusic");
       backgroundMusic.pause();
       backgroundMusic.volume = 0.0;
+      backgroundMusic.currentTime = 0;
     }
   },
   data() {

@@ -23,13 +23,13 @@ export default {
 
       let backgroundMusic = document.getElementById("backgroundMusic");
       backgroundMusic.pause();
+      backgroundMusic.currentTime = 0;
     },
     hidePlayerAndPlayMusic() {
       this.showPlayer = false;
 
       if(!this.userIsWatching) {
         let backgroundMusic = document.getElementById("backgroundMusic");
-        backgroundMusic.currentTime = 0;
         backgroundMusic.play();
       }
     }

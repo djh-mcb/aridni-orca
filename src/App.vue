@@ -2,6 +2,7 @@
   <div id="app">
     <video @play="backupBackgroundRequired = false" autoplay muted loop playsinline class="background-video" src="./assets/videos/background-video.mp4" type="video/mp4"/>
     <audio id="backgroundMusic" type="audio/mpeg" loop :src="require('@/assets/audio/background-music.mp3')"></audio>
+    <audio id="chimes" preload="auto" type="audio/mpeg" :src="require('@/assets/audio/chimes.mp3')"></audio>
     <img v-if=backupBackgroundRequired class="background-video" src="./assets/images/background-video-backup.webp">
     <router-view class="mainView"></router-view>
   </div>
