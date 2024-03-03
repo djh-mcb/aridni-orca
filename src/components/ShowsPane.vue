@@ -4,7 +4,7 @@
     <div v-show="showInfo" class="parchmentBackground"></div>
     <div v-show=showInfo class="showsTextBox">
       <div class="showsText">
-        <br>゜・future * ✧<br><br>tba<br><br>✧: * past ゜:<br><br>evade house at madrid fashion week<br>19/9/22 <br><br>peckham audio<br>13/4/23
+        <br>゜・future * ✧<br><br>tba<br><br>✧: * past ゜:<br><br>ribbxn x niche<br>at the bath house<br>17/2/24<br><br>evade house at madrid fashion week<br>19/9/22 <br><br>peckham audio<br>13/4/23
         <div class="swords">
           <img class="crystalSword" src="../assets/images/crystal-sword.webp">
         </div>
@@ -52,7 +52,7 @@ export default {
   width: calc(100% + var(--border-size) + 2px);
   height: calc(100% - var(--border-size) * 2 + 2px);
   margin-top: calc(var(--border-size) - 1px);
-  margin-left: calc(var(--border-size) - 1px);
+  margin-left: 0;
   position: absolute;
   top: 0;
   left: 0;
