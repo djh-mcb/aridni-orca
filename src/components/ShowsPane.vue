@@ -4,7 +4,15 @@
     <div v-show="showInfo" class="parchmentBackground"></div>
     <div v-show=showInfo class="showsTextBox">
       <div class="showsText">
-        <br>゜・future * ✧<br><br>tba<br><br>✧: * past ゜:<br><br>ribbxn x niche<br>at the bath house<br>17/2/24<br><br>evade house at madrid fashion week<br>19/9/22 <br><br>peckham audio<br>13/4/23
+        <br>゜・future * ✧<br>
+        <a href="https://www.windmillbrixton.co.uk/events/2024-08-14-cuckoo-spit-very-skeleton-aridni-orca-lost-daughter-the-windmill"><br>tissue<br>at the windmill ldn<br>14/8/24<br></a>
+        <br>✧: * past ゜:<br>
+        <br>holy pop<br>at the divine<br>20/6/24<br>
+        <br>niche<br>at the bath house<br>15/6/24<br>
+        <br>tudor songs<br>at national archives<br>2/6/24<br>
+        <br>ribbxn x niche<br>at the bath house<br>17/2/24<br>
+        <br>tissue<br>at peckham audio<br>13/4/23<br>
+        <br>evade house<br>at madrid fashion week<br>19/9/22 <br>
         <div class="swords">
           <img class="crystalSword" src="../assets/images/crystal-sword.webp">
         </div>
@@ -87,6 +95,10 @@ export default {
     width: 0px;
     height: 0px;
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 .showsText {
