@@ -5,8 +5,9 @@
     <div v-show=showInfo class="showsTextBox">
       <div class="showsText">
         <br>゜・future * ✧<br>
-        <a href="https://www.windmillbrixton.co.uk/events/2024-08-14-cuckoo-spit-very-skeleton-aridni-orca-lost-daughter-the-windmill"><br>tissue<br>at the windmill ldn<br>14/8/24<br></a>
+        <a href="https://ra.co/events/2015122"><br>self<br>at cafe avalon ldn<br>14/8/24<br></a>
         <br>✧: * past ゜:<br>
+        <br>tissue<br>at the windmill ldn<br>14/8/24<br>
         <br>holy pop<br>at the divine<br>20/6/24<br>
         <br>niche<br>at the bath house<br>15/6/24<br>
         <br>tudor songs<br>at national archives<br>2/6/24<br>
