@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="bottomRightRow row">
-                <a href="https://aridniorca.bandcamp.com/"><NavigationPane class="buy-pane" source="buy-image.webp" accentColor="white" text="buy"/></a>
+                <a href="https://aridniorca.bandcamp.com/track/crushed"><NavigationPane class="buy-pane" source="buy-image.webp" accentColor="white" text="buy"/></a>
                 <ImagePane class="featherpluck-pane" source="featherpluck-art.webp" accentColor="#ceeefd"/>
             </div>
         </div>
