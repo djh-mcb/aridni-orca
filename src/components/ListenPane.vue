@@ -58,7 +58,7 @@ export default {
   left: calc(var(--border-size) - 1px);
   height: calc(100% - var(--border-size) * 2 + 2px);
   width: calc(100% - var(--border-size) * 2 + 2px);
-  background-color: #756579
+  background-color: rgb(40,68,102)
 }
 
 .embeddedPlayer {

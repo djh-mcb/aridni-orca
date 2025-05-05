@@ -4,9 +4,10 @@
     <div v-show="showInfo" class="parchmentBackground"></div>
     <div v-show=showInfo class="showsTextBox">
       <div class="showsText">
-        <br>゜・future * ✧<br>
-        <a href="https://ra.co/events/2015122"><br>self<br>at cafe avalon ldn<br>14/8/24<br></a>
+        <!-- <br>゜・future * ✧<br> -->
         <br>✧: * past ゜:<br>
+        <br>w/ cuckoo spit<br>at the windmill ldn<br>22/4/25<br>
+        <br>self<br>at cafe avalon ldn<br>30/10/24<br>
         <br>tissue<br>at the windmill ldn<br>14/8/24<br>
         <br>holy pop<br>at the divine<br>20/6/24<br>
         <br>niche<br>at the bath house<br>15/6/24<br>
