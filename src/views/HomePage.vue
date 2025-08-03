@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="bottomRightRow row">
-                <a href="https://aridniorca.bandcamp.com/track/saint-mikhael-and-the-dragon"><NavigationPane class="buy-pane" source="buy-image.webp" accentColor="white" text="buy"/></a>
+                <a href="https://aridniorca.bandcamp.com/album/the-bell-the-swan-the-golden-thread"><NavigationPane class="buy-pane" source="buy-image.webp" accentColor="white" text="buy"/></a>
                 <ImagePane class="featherpluck-pane" source="featherpluck-art.webp" accentColor="#ceeefd"/>
             </div>
         </div>
