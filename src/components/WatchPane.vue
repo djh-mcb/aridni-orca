@@ -1,7 +1,7 @@
 <template>
   <div class="watchPaneBox">
     <NavigationPane class="watchPane" source="watch-image.webp" accentColor=pink text="watch" @click="showPlayerAndPauseMusic"/>
-    <iframe v-show=showPlayer class="embeddedPlayer" src="https://www.youtube.com/watch?v=bGePQWRfElg" title="The Palace" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe v-show=showPlayer class="embeddedPlayer" src="https://www.youtube.com/embed/bGePQWRfElg?si=q72yFin9xriwgZMd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 </template>
 
